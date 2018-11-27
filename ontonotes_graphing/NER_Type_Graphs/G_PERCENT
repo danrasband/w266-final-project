@@ -1,0 +1,11 @@
+strict graph  {
+PERCENT;
+"direct object";
+take;
+"nominal subject";
+is;
+PERCENT -- "direct object";
+PERCENT -- "nominal subject";
+"direct object" -- take;
+"nominal subject" -- is;
+}

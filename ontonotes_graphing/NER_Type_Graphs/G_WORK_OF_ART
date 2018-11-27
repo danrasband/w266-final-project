@@ -1,0 +1,13 @@
+strict graph  {
+WORK_OF_ART;
+"direct object";
+awarded;
+punctuation;
+Cole;
+won;
+WORK_OF_ART -- "direct object";
+WORK_OF_ART -- punctuation;
+"direct object" -- awarded;
+"direct object" -- won;
+punctuation -- Cole;
+}

@@ -1,0 +1,37 @@
+strict graph  {
+MONEY;
+"direct object";
+does;
+"head of prep phrase";
+Sold;
+millions;
+pay;
+ROOT;
+million;
+cost;
+receive;
+get;
+nummod;
+plan;
+generate;
+sold;
+"noun phrase as adverbial modifier";
+more;
+MONEY -- "direct object";
+MONEY -- "head of prep phrase";
+MONEY -- ROOT;
+MONEY -- nummod;
+MONEY -- "noun phrase as adverbial modifier";
+"direct object" -- does;
+"direct object" -- pay;
+"direct object" -- receive;
+"direct object" -- get;
+"direct object" -- generate;
+"head of prep phrase" -- Sold;
+"head of prep phrase" -- millions;
+"head of prep phrase" -- cost;
+"head of prep phrase" -- sold;
+ROOT -- million;
+nummod -- plan;
+"noun phrase as adverbial modifier" -- more;
+}

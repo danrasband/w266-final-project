@@ -1,0 +1,17 @@
+strict graph  {
+EVENT;
+"nominal subject";
+ended;
+beginning;
+"head of prep phrase";
+images;
+"object predicate";
+designated;
+EVENT -- "nominal subject";
+EVENT -- "head of prep phrase";
+EVENT -- "object predicate";
+"nominal subject" -- ended;
+"nominal subject" -- beginning;
+"head of prep phrase" -- images;
+"object predicate" -- designated;
+}
