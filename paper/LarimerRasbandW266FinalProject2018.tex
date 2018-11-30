@@ -34,7 +34,7 @@
 
 \author{Andrew Larimer \\
   {\tt andrewlarimer@berkeley.edu} \\\And
-  Dan Rasband \\
+  Daniel Rasband \\
   {\tt danrasband@berkeley.edu} \\}
   
 \date{12/07/18}
@@ -53,7 +53,7 @@ Errors at this task can be particularly frustrating, as the fact that a given pe
 
 These systems also don't provide a clear view of exactly what a neural network considers a PERSON to be in comparison with an ORGANISATION, or why a given tag was assigned. By contrast, we can at least explore word embeddings in comparison to one another, but current NER systems don't provide us an easy way to compare internal representations of different entity types.
 
-To solve these problems, we propose a system of clear 'mental models' of each Named Entity type labeled in the OntoNotes corpus, constructed as a grammar-aware graph from labeled data. Figure \ref{fig:person_graph} shows an example of a dramatically pruned version of our representation of the PERSON entity type. By 'grammar-aware', we mean that each Named Entity type has a subgraph corresponding to how the entity is used in that sentence. In Figure  \ref{fig:person_graph}, we see that when a PERSON is the subject of a verb with an active tense, they might conced, dare, or sign. When they are a direct object, someone or something might be urging them, bringing them, or handing them something. If used as a possession modifer, a person might have a widow, a son, or words.
+To solve these problems, we propose a system of clear 'mental models' of each Named Entity type labeled in the OntoNotes corpus, constructed as a grammar-aware graph from labeled data. Figure \ref{fig:person_graph} shows an example of a dramatically pruned version of our representation of the PERSON entity type. By 'grammar-aware', we mean that each Named Entity type has a subgraph corresponding to how the entity is used in that sentence. In Figure  \ref{fig:person_graph}, we see that when a PERSON is the subject of a verb with an active tense, they might concede, dare, or sign. When they are a direct object, someone or something might be urging them, bringing them, or handing them something. If used as a possession modifier, a person might have a widow, a son, or words.
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{figures/G_PERSON.png}
@@ -67,7 +67,7 @@ While building these 'mental models' from a dependency parse, the strength of th
 
 As alluded to earlier, our model is also transparent and easily adjusted. In the event of errors within a particular domain, a user could prune the leaf nodes causing confusion or add in additional leaf nodes to help better identify entities within their field.
 
-We envision this system developing into something particularly powerful over longer literary works such as novels, particularly as we develop more fine-grained NER types. With additional refinement and the appropriate labeled dataset, we could classify a protagonist in a novel as a traditional hero or an anti-hero. We could identify occupations and/or literary tropes represented by supporting characters. And interesting tools for authors or publishers could be developed by tracking changes in a character's behavior from heroic to antiheroic from chapter to chapter.
+We envision this system developing into a powerful classifier for longer literary works such as novels, particularly as we develop more fine-grained named entity types. With additional refinement and the appropriate labeled dataset, we could classify a protagonist in a novel as a traditional hero or an anti-hero. We could identify occupations and/or literary tropes represented by supporting characters. And interesting tools for authors or publishers could be developed by tracking changes in a character's behavior from heroic to antiheroic from chapter to chapter.
 
 Furthermore, we see the potential of graph-based 'mental constructs' as having additional applications in the progression of machine learning. We believe transition-based parsing approaches could directly build on these graphs, and logical operations could be conducted on them to build out unstated but implied nodes that enhance our understanding of entities beyond what is explicitly stated.
 
@@ -90,15 +90,15 @@ While the field of Question Answering is distinct from NER, we were additionally
 
 \section{Methods}
 
-We use the OntoNotes 5.0 corpus for its 1,000,000+ articles with labeled named entities.
+We use the OntoNotes 5.0 corpus for its 143,709 sentences with labeled named entities.
 
 \subsection{Creating our Named Entity Type 'Mental Constructs'}
 
-For each occurence of a labeled named entity in that corpus, we do the following:
+For each occurrence of a labeled named entity in that corpus, we do the following:
 
-1. If this occurence of a named entity consists of more than one word (ex. 'Nobel Peace Prize'), we assume the head of the phrase to be the last word of the named entity phrase.
+1. If this occurrence of a named entity consists of more than one word (ex. 'Nobel Peace Prize'), we assume the head of the phrase to be the last word of the named entity phrase.
 
-2. We load the graph for the Named Entity Type represented by that occurence (PERSON, ORGANISATION, WORK OF ART, etc.).
+2. We load the graph for the Named Entity Type represented by that occurrence (PERSON, ORGANIZATION, WORK OF ART, etc.).
 
 3. We check to see if that Named Entity Type graph already has a child node corresponding to the dependency tag of the head of our named entity phrase. We call these nodes "syntactic function nodes."  In the 'Nobel Peace Prize' example, we see that 'Prize' is a 'direct object', so we find the 'direct object' child node of our 'WORK OF ART' entity type node. If there isn't already that child node, we create it. If it is already there, we increase a score count by one for the sake of generating weights later on.
 
@@ -114,9 +114,9 @@ We consider each Named Entity as identified by an existing NER system (spaCy's b
 
 1. We construct a candidate graph in a similar manner to the one described above for generating the Named Entity Type (NET) graphs. We use a coreference system to include multiple references to the entity in order to have as robust a graph as possible to compare against our NET graphs.
 
-2. We compare our candidate graph to each of the eighteen Named Entity Type graphs. For each leaf node in our candidate graph, we get its "syntactic function node", and so we focus our search on the child nodes of the Named Entity Type's corresponding "intermediary grammar node."
+2. We compare our candidate graph to each of the eighteen Named Entity Type graphs. For each leaf node in our candidate graph, we get its "syntactic function node", and so we focus our search on the child nodes of the Named Entity Type's corresponding syntactic function.
 
-3. For each child node of that corresponding "intermediary grammar node," we calculate a score as follows: the similarity of the two words' embeddings (according to spaCy's Token.similarity() method, which is presumably a cosine similarity of the vectors but is not explicitly stated as such in their documentation) is multiplied by the weight of that leaf node in the Named Entity Type graph (which we calculated above based on its frequency of use within that grammatical context). By using the cosine similarity of the embeddings, we are more capable of performing inference on new candidate words that we don't find in any given Named Entity Type graph, but which may be similar. We are still considering how we will score a candidate word for which we don't have an embedding.
+3. For each child node of that corresponding "syntactic function node," we calculate a score as follows: the similarity of the two words' embeddings (according to spaCy's Token.similarity() method, which is presumably a cosine similarity of the vectors but is not explicitly stated as such in their documentation) is multiplied by the weight of that leaf node in the Named Entity Type graph (which we calculated above based on its frequency of use within that grammatical context). By using the cosine similarity of the embeddings, we are more capable of performing inference on new candidate words that we don't find in any given Named Entity Type graph, but which may be similar. We are still considering how we will score a candidate word for which we don't have an embedding.
 
 4. We sum the scores of each "syntactic function node"'s highest-scoring child node to arrive at the similarity score for that Named Entity Type Graph.
 
