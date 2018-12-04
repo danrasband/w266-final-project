@@ -1,6 +1,9 @@
 # This file helps with splitting the data.
 
+import os
 import numpy as np
+import dill as pickle
+import pandas as pd
 
 def train_dev_test_split_ids(ids, train_portion=0.7, dev_portion=0.2, seed=None):
     '''Built out three lists of ids for train, dev, and test portions.'''
@@ -27,3 +30,69 @@ def make_entity_id(document_id, sentence_index, start_word_index, end_word_index
         str(start_word_index),
         str(end_word_index),
     ])
+
+def entity_id_from_row(row):
+    return make_entity_id(
+        row.document_id,
+        row.sentence_index,
+        row.start_word_index,
+        row.end_word_index,
+    )
+
+def get_entity_ids():
+    with open(_data_path('entity_ids.pkl'), 'rb') as file:
+        entity_ids = pickle.load(file)
+    return entity_ids
+
+def get_labeled_data():
+    entities = pd.read_csv(_data_path('name_entity.csv'))
+    entities['entity_id'] = [entity_id_from_row(row) for _, row in entities.iterrows()]
+    return entities.set_index('entity_id')
+
+def get_inputs_from_sentences():
+    sentences = pd.read_csv(_data_path('sentence.csv'))
+    parsed_sentences_file = _data_path('sentences.pkl')
+    with open(parsed_sentences_file, 'rb') as file:
+        spacy_parsed = pickle.load(file)
+    sentences['spacy_parsed'] = spacy_parsed
+    
+    rows = []
+    for _, sentence in sentences.iterrows():
+        if sentence.spacy_parsed is not None:
+            for ent in sentence.spacy_parsed.ents:
+                entity_id = ':'.join([
+                    sentence.document_id,
+                    str(sentence.sentence_index),
+                    str(ent.start),
+                    str(ent.end - 1),
+                ])
+                row = [
+                    entity_id,
+                    sentence.document_id,
+                    ent.label_,
+                    str(sentence.sentence_index),
+                    str(ent.start),
+                    str(ent.end - 1),
+                    str(ent),
+                ]
+                rows.append(row)
+        else:
+            print('Error with {}'.format(sentence))
+    
+    columns = (
+        'entity_id',
+        'document_id',
+        'type',
+        'sentence_index',
+        'start_index',
+        'end_index',
+        'string',
+    )
+    return pd.DataFrame(data=rows, columns=columns, index='entity_id')
+
+def _data_folder():
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    return dir_path + '/../../data'
+
+def _data_path(filename):
+    return '{}/{}'.format(_data_folder(), filename)
