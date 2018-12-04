@@ -1,162 +1,160 @@
 token,entity,count,percentage
-Harry Potter,PERSON,17,65.4%
-Harry Potter,WORK_OF_ART,9,34.6%
-the Sorcerer's Stone CHAPTER,ORG,1,100.0%
-ONE,CARDINAL,1,100.0%
+Harry Potter,PERSON,16,64.0%
+Harry Potter,WORK_OF_ART,9,36.0%
+Sorcerer,PERSON,15,100.0%
 Dursley,PERSON,52,100.0%
-four,CARDINAL,26,100.0%
-Privet Drive,LOC,8,53.3%
-Privet Drive,ORG,5,33.3%
-Privet Drive,FAC,2,13.3%
-Grunnings,PERSON,1,100.0%
+four,CARDINAL,22,100.0%
+Privet Drive,FAC,16,100.0%
+Grunnings,PERSON,2,100.0%
 Dursleys,PERSON,50,100.0%
-Dudley,PERSON,102,75.0%
-Dudley,GPE,25,18.4%
-Dudley,ORG,9,6.6%
-Potters,PERSON,11,100.0%
-Potter,PERSON,15,83.3%
-Potter,ORG,3,16.7%
+Dudley,PERSON,116,85.3%
+Dudley,ORG,13,9.6%
+Dudley,GPE,7,5.1%
+Potter,PERSON,36,97.3%
+Potter,WORK_OF_ART,1,2.7%
 several years,DATE,2,100.0%
 unDursleyish,NORP,1,100.0%
-Tuesday,DATE,2,100.0%
-half past eight,CARDINAL,1,100.0%
-first,ORDINAL,73,100.0%
-second,ORDINAL,33,100.0%
-morning,TIME,7,100.0%
+Potters,NORP,4,50.0%
+Potters,PERSON,4,50.0%
+Tuesday,DATE,1,100.0%
+half past eight,TIME,1,100.0%
+first,ORDINAL,75,100.0%
+second,ORDINAL,27,100.0%
+that day,DATE,2,100.0%
+morning,TIME,9,100.0%
 a few minutes later,TIME,3,100.0%
 ninth,ORDINAL,1,100.0%
 nighttime,TIME,1,100.0%
-five,CARDINAL,13,100.0%
-Harry,PERSON,1273,99.1%
-Harry,ORG,10,0.8%
-Harry,GPE,1,0.1%
-Harvey,PERSON,1,100.0%
+five,CARDINAL,10,90.9%
+five,QUANTITY,1,9.1%
+Harry,PERSON,1277,100.0%
 Harold,PERSON,1,100.0%
-afternoon,TIME,8,100.0%
+afternoon,TIME,6,100.0%
 five o'clock,TIME,2,100.0%
 a few seconds,TIME,5,100.0%
-today,DATE,13,100.0%
-Muggle,PERSON,21,95.5%
-Muggle,ORG,1,4.5%
-that morning,TIME,1,100.0%
+today,DATE,14,100.0%
+Muggle,ORG,4,66.7%
+Muggle,PERSON,2,33.3%
+number four,CARDINAL,5,100.0%
 normal day,DATE,1,100.0%
-night,TIME,10,100.0%
+the evening,TIME,1,100.0%
+night,TIME,11,100.0%
 hundreds,CARDINAL,9,100.0%
-Jim McGuffin,ORG,1,100.0%
-tonight,TIME,18,100.0%
+Jim McGuffin,PERSON,1,100.0%
+tonight,TIME,19,100.0%
 Jim,PERSON,1,100.0%
+Ted,PERSON,1,100.0%
 Kent,GPE,2,100.0%
 Yorkshire,GPE,2,100.0%
-Dundee,PERSON,1,100.0%
+Dundee,GPE,1,100.0%
 yesterday,DATE,4,100.0%
 Bonfire Night,WORK_OF_ART,1,100.0%
 next week,DATE,3,100.0%
-night tonight,TIME,1,100.0%
-Britain,GPE,2,100.0%
-two,CARDINAL,60,100.0%
+Britain,GPE,3,100.0%
+two,CARDINAL,55,98.2%
+two,QUANTITY,1,1.8%
 Howard,PERSON,1,100.0%
-Nasty,ORG,1,100.0%
-Petunia,PERSON,1,25.0%
-Petunia,ORG,2,50.0%
-Petunia,GPE,1,25.0%
+Petunia,PERSON,1,100.0%
 nearly midnight,TIME,1,100.0%
-half-moon,QUANTITY,2,100.0%
+half-moon,TIME,1,100.0%
 Albus Dumbledore,PERSON,7,100.0%
 Twelve,CARDINAL,1,100.0%
+the Put-Outer,PERSON,1,50.0%
 the Put-Outer,PRODUCT,1,50.0%
-the Put-Outer,FAC,1,50.0%
-Professor McGonagall,PERSON,35,100.0%
-one,CARDINAL,87,100.0%
-all day,DATE,6,100.0%
+Dumbledore,ORG,3,2.1%
+Dumbledore,PERSON,138,95.8%
+Dumbledore,WORK_OF_ART,3,2.1%
+McGonagall,PERSON,96,100.0%
+all day,DATE,7,100.0%
 All day,DATE,1,100.0%
 dozen,CARDINAL,1,100.0%
-McGonagall,PERSON,58,100.0%
 Dedalus Diggle,PERSON,3,100.0%
-Dumbledore,PERSON,113,92.6%
-Dumbledore,ORG,9,7.4%
 eleven years,DATE,2,100.0%
 the very day,DATE,1,100.0%
-Voldemort,PERSON,28,100.0%
+YouKnow,PERSON,1,50.0%
+YouKnow,ORG,1,50.0%
+Voldemort,PERSON,26,100.0%
 half,CARDINAL,19,100.0%
 Pomfrey,PERSON,13,100.0%
 last night,TIME,4,100.0%
-Godric,PERSON,1,100.0%
+Godric's Hollow,FAC,1,100.0%
 Lily,PERSON,6,100.0%
-James Potter,PERSON,2,100.0%
+James Potter,PERSON,3,100.0%
 James,PERSON,2,100.0%
-Albus,PERSON,2,100.0%
+Albus,PERSON,1,100.0%
 twelve,CARDINAL,8,100.0%
-Hagrid,PERSON,271,74.7%
-Hagrid,ORG,92,25.3%
-Harry Potter day,WORK_OF_ART,1,100.0%
-CarA,PERSON,2,100.0%
+Hagrid,PERSON,359,98.6%
+Hagrid,ORG,5,1.4%
 at least five,CARDINAL,1,100.0%
-Young Sirius Black,WORK_OF_ART,1,100.0%
 Bristol,GPE,1,100.0%
 the London Underground,LOC,1,100.0%
-S-s-sorry,WORK_OF_ART,1,100.0%
 a full minute,TIME,1,100.0%
-three,CARDINAL,48,100.0%
+three,CARDINAL,46,100.0%
 Sirius,PERSON,1,100.0%
 G'night,ORG,1,100.0%
-Put-Outer,PRODUCT,1,100.0%
-One,CARDINAL,15,100.0%
+One,CARDINAL,14,100.0%
 a few hours' time,TIME,1,100.0%
 the next few weeks,DATE,1,100.0%
-CHAPTER,EVENT,10,100.0%
-TWO,CARDINAL,2,100.0%
-ten years,DATE,1,100.0%
-the night,TIME,4,100.0%
+To Harry Potter,WORK_OF_ART,1,100.0%
+TWO,CARDINAL,1,100.0%
+the night,TIME,3,100.0%
 Ten years ago,DATE,1,100.0%
 Dudley Dursley,PERSON,1,100.0%
-the day,DATE,6,100.0%
-Duddy,ORG,1,100.0%
+the day,DATE,5,100.0%
+Duddy,PERSON,1,100.0%
+one,CARDINAL,74,98.7%
+one,QUANTITY,1,1.3%
 about four,CARDINAL,1,100.0%
-Uncle Vernon,PERSON,72,91.1%
-Uncle Vernon,GPE,6,7.6%
-Uncle Vernon,ORG,1,1.3%
-Thirty-six,CARDINAL,1,100.0%
+Scotch,ORG,1,100.0%
+Vernon,PERSON,38,67.9%
+Vernon,GPE,18,32.1%
+About once a week,DATE,1,100.0%
+Uncle Vernon,PERSON,55,100.0%
+Thirty-six,DATE,1,100.0%
 two less than last year,DATE,1,100.0%
 Marge,PERSON,5,100.0%
-Mommy,PERSON,3,100.0%
 thirty-seven,CARDINAL,1,100.0%
-Two,CARDINAL,6,100.0%
-thirty ...,TIME,1,100.0%
-thirty,CARDINAL,1,100.0%
-Thirty-nine,CARDINAL,1,100.0%
-Aunt Petunia,PERSON,19,59.4%
-Aunt Petunia,PRODUCT,9,28.1%
-Aunt Petunia,WORK_OF_ART,3,9.4%
-Aunt Petunia,LOC,1,3.1%
-Vernon,PERSON,17,68.0%
-Vernon,GPE,8,32.0%
+Two,CARDINAL,3,100.0%
+thirty ...,CARDINAL,1,100.0%
+Thirty-nine,QUANTITY,1,100.0%
+Aunt Petunia,PERSON,27,96.4%
+Aunt Petunia,WORK_OF_ART,1,3.6%
+Atta,PERSON,1,100.0%
 sixteen,CARDINAL,1,100.0%
 Figg,PERSON,8,100.0%
 Every year,DATE,3,100.0%
-Tibbles,PERSON,1,100.0%
+a whole year,DATE,1,100.0%
+Tibbles,GPE,1,100.0%
+Snowy,GPE,1,50.0%
+Snowy,ORG,1,50.0%
 Paws,PERSON,1,100.0%
 Tufty,NORP,1,100.0%
 Yvonne,PERSON,1,100.0%
 Majorca,GPE,1,100.0%
 years,DATE,10,100.0%
-Piers Polkiss,ORG,2,100.0%
+Dinky Duddydums,ORG,1,100.0%
+Piers Polkiss,PERSON,2,100.0%
+Piers,ORG,1,9.1%
+Piers,PERSON,10,90.9%
 Half an hour later,TIME,1,100.0%
-Piers,GPE,8,88.9%
-Piers,FAC,1,11.1%
-Christmas,DATE,18,100.0%
-Saturday,DATE,6,100.0%
-Boa Constrictor,ORG,1,100.0%
+Christmas,DATE,17,100.0%
+a sleepless night,TIME,1,100.0%
+Next morning,TIME,2,100.0%
+a week,DATE,4,100.0%
+This morning,TIME,2,100.0%
+Saturday,DATE,7,100.0%
+all day long,DATE,1,100.0%
+Boa Constrictor,PERSON,1,100.0%
 Brazil,GPE,3,100.0%
-DUDLEY,ORG,1,100.0%
-MR,PERSON,1,100.0%
+DUDLEY,PERSON,1,100.0%
 DURSLEY,PERSON,2,100.0%
 one second,TIME,1,100.0%
-Thanksss,GPE,1,100.0%
-almost ten years,DATE,1,100.0%
+Thanksss,LANGUAGE,1,100.0%
+Piers and Dudley,ORG,1,100.0%
+ten years,DATE,1,100.0%
 ten miserable years,DATE,1,100.0%
 long hours,TIME,1,100.0%
 the other day,DATE,1,100.0%
-THREE,CARDINAL,1,100.0%
 Brazilian,NORP,1,100.0%
 the summer holidays,DATE,1,100.0%
 every single day,DATE,1,100.0%
@@ -164,648 +162,642 @@ Dennis,PERSON,1,100.0%
 Malcolm,PERSON,1,100.0%
 Gordon,PERSON,1,100.0%
 Harry Hunting,PERSON,1,100.0%
-the end of the holidays,DATE,1,100.0%
-September,DATE,2,100.0%
-Uncle Vernon's,ORG,2,28.6%
-Uncle Vernon's,GPE,3,42.9%
-Uncle Vernon's,PERSON,2,28.6%
+September,DATE,3,100.0%
+Smeltings,LOC,2,50.0%
 Smeltings,PRODUCT,1,25.0%
-Smeltings,ORG,3,75.0%
+Smeltings,LAW,1,25.0%
+Stonewall High,ORG,3,100.0%
 the first day,DATE,1,100.0%
-One day in July,DATE,1,100.0%
+Stonewall,ORG,1,100.0%
+One day,DATE,1,100.0%
+July,DATE,1,100.0%
 London,GPE,13,100.0%
-evening,TIME,6,100.0%
+evening,TIME,9,100.0%
+maroon,TIME,3,100.0%
 Ickle Dudleykins,PERSON,1,100.0%
-the next morning,TIME,5,100.0%
-DotA,PERSON,1,100.0%
-his first day,DATE,2,100.0%
-Three,CARDINAL,8,100.0%
-the Isle of Wight,LOC,1,100.0%
+the next morning,TIME,3,100.0%
+Smelting,ORG,6,100.0%
+Three,CARDINAL,11,100.0%
 H. Potter,PERSON,5,100.0%
-4,CARDINAL,3,100.0%
-Privet Drive Little,ORG,1,100.0%
-Surrey,PERSON,1,100.0%
-H.,PERSON,1,100.0%
-Hurry,WORK_OF_ART,2,66.7%
-Hurry,ORG,1,33.3%
+4,CARDINAL,2,66.7%
+4,QUANTITY,1,33.3%
+"H. ""Hurry",PERSON,1,100.0%
 seconds,TIME,4,100.0%
-That evening,TIME,1,100.0%
+Uncle Vernon's,PERSON,1,100.0%
 month-old,DATE,1,100.0%
 Yesterday,DATE,1,100.0%
 Today,DATE,1,100.0%
-The Smallest Bedroom,FAC,1,100.0%
+The Smallest Bedroom,LOC,1,100.0%
 a minute,TIME,3,100.0%
-six o'clock,TIME,1,100.0%
+six o'clock the next morning,TIME,1,100.0%
 about half an hour,TIME,1,100.0%
-that day,DATE,1,100.0%
 Friday,DATE,4,100.0%
 no less than twelve,CARDINAL,2,100.0%
-"""Tiptoe Through the Tulips""",WORK_OF_ART,1,100.0%
+Tiptoe Through the Tulips,WORK_OF_ART,1,100.0%
 Twenty-four,CARDINAL,1,100.0%
 two dozen,CARDINAL,1,100.0%
 Sunday,DATE,1,100.0%
 Sundays,DATE,1,100.0%
-thirty or,TIME,1,100.0%
-forty,QUANTITY,1,100.0%
+Next,ORG,1,100.0%
+thirty or forty,CARDINAL,1,100.0%
 five minutes,TIME,3,100.0%
 Ten minutes later,TIME,1,100.0%
-the next day,DATE,6,100.0%
-Scuse,PERSON,1,100.0%
-17,CARDINAL,1,100.0%
-Cokeworth Harry,PERSON,1,100.0%
-late that afternoon,TIME,1,100.0%
+a bad day,DATE,1,100.0%
+the next day,DATE,5,100.0%
+hours,TIME,2,100.0%
 Monday,DATE,3,100.0%
-The Great Humberto's,WORK_OF_ART,1,100.0%
+The Great Humberto's,ORG,1,100.0%
 the days,DATE,2,100.0%
-tomorrow,DATE,9,100.0%
+"tomorrow, Tuesday",DATE,1,100.0%
 eleventh,ORDINAL,1,100.0%
 last year,DATE,5,100.0%
 eleven every day,DATE,1,100.0%
 like hours,TIME,2,100.0%
 only two,CARDINAL,2,100.0%
 Spray,ORG,1,100.0%
-midnight,TIME,5,100.0%
-eleven,TIME,1,33.3%
-eleven,CARDINAL,2,66.7%
-ten minutes,TIME,4,100.0%
+midnight,TIME,6,100.0%
+eleven,TIME,2,66.7%
+eleven,CARDINAL,1,33.3%
+ten minutes',TIME,1,100.0%
 Five minutes,TIME,1,100.0%
 Four minutes,TIME,1,100.0%
 Three minutes,TIME,1,100.0%
 two minutes,TIME,1,100.0%
 One minute,TIME,1,100.0%
-Thirty seconds,TIME,1,100.0%
-twenty,CARDINAL,2,66.7%
-twenty,QUANTITY,1,33.3%
-ten,CARDINAL,7,87.5%
-ten,QUANTITY,1,12.5%
+Thirty seconds...,TIME,1,100.0%
 FOUR,CARDINAL,1,100.0%
 THE KEEPER OF THE KEYS BOOM,ORG,1,100.0%
-Las,PERSON,2,100.0%
+Budge,PERSON,2,100.0%
+Las,GPE,2,100.0%
 Yeh,PERSON,6,100.0%
+Birthday Harry,DATE,1,100.0%
 Rubeus Hagrid,PERSON,2,100.0%
 Keeper of Keys and Grounds,ORG,1,100.0%
-Hogwarts,ORG,7,10.4%
-Hogwarts,PERSON,60,89.6%
-a second later,DATE,3,100.0%
 six,CARDINAL,4,100.0%
+Hogwarts,PERSON,17,42.5%
+Hogwarts,DATE,6,15.0%
+Hogwarts,TIME,2,5.0%
+Hogwarts,ORG,7,17.5%
+Hogwarts,WORK_OF_ART,8,20.0%
 Sony,ORG,1,100.0%
 Mimblewimble,WORK_OF_ART,1,100.0%
 Vernon Dursley,PERSON,1,100.0%
-Harry eagerly,PERSON,2,100.0%
-"The Floor, Hut-on-the-Rock",FAC,1,100.0%
+all these years,DATE,1,100.0%
+"The Floor, Hut",ORG,1,100.0%
+the-Rock,LOC,1,100.0%
 The Sea,LOC,1,100.0%
+HOGWARTS SCHOOL of WITCHCRAFT,ORG,1,100.0%
+WIZARDRY,ORG,1,100.0%
 Merlin,PRODUCT,2,100.0%
 Chf,PERSON,1,100.0%
-"Warlock, Supreme Mugwump",ORG,1,100.0%
-International Confed,PRODUCT,1,100.0%
-Wizards),WORK_OF_ART,1,100.0%
+International Confed,ORG,1,100.0%
+Wizards,ORG,4,100.0%
 Hogwarts School of Witchcraft,ORG,1,100.0%
-Wizardry,ORG,1,50.0%
-Wizardry,GPE,1,50.0%
+Wizardry,ORG,1,100.0%
 September 1,DATE,1,100.0%
 no later than July 31,DATE,1,100.0%
 Minerva McGonagall,PERSON,1,100.0%
 a few minutes,TIME,2,100.0%
-Gallopin,PERSON,1,100.0%
-Gorgons,PERSON,1,100.0%
+Gallopin' Gorgons,WORK_OF_ART,1,100.0%
+tomorrow,DATE,8,100.0%
 Hagrid Hagrid,PERSON,1,100.0%
-3,CARDINAL,3,100.0%
-myst'ry,ORG,1,25.0%
-myst'ry,PERSON,1,25.0%
-myst'ry,LOC,2,50.0%
-Gulpin,PERSON,1,100.0%
-Blimey,GPE,2,50.0%
-Blimey,NORP,2,50.0%
+A Muggle,WORK_OF_ART,1,100.0%
+3 s,QUANTITY,1,100.0%
 Don,PERSON,7,100.0%
 about twenty years ago,DATE,1,100.0%
 Reckon Dumbledore's,PERSON,1,100.0%
 only one,CARDINAL,6,100.0%
 their day,DATE,1,100.0%
-the Dark Side,LOC,2,66.7%
-the Dark Side,FAC,1,33.3%
+the Dark Side,FAC,2,100.0%
 Halloween ten years ago,DATE,1,100.0%
-McKinnons,PERSON,1,100.0%
+year,DATE,4,100.0%
+McKinnons,ORG,1,100.0%
 Bones,PRODUCT,1,100.0%
-Prewetts,LOC,1,100.0%
-Vol--,PERSON,1,100.0%
-Codswallop,ORG,2,100.0%
-James Potter',PERSON,1,100.0%
+Prewetts,PERSON,1,100.0%
+Same night,TIME,1,100.0%
+Codswallop,WORK_OF_ART,2,100.0%
 Seven years,DATE,1,100.0%
-Dumbled--,PERSON,1,100.0%
-CRACKPOT OLD,ORG,1,100.0%
+Albus Dumbled--,PERSON,1,100.0%
+the next second,DATE,2,100.0%
 third year,DATE,1,100.0%
-FIVE,CARDINAL,1,100.0%
-DIAGON ALLEY Harry,FAC,1,100.0%
-Knuts,ORG,1,25.0%
-Knuts,NORP,3,75.0%
-D'yeh,ORG,2,100.0%
-Gringotts,ORG,10,37.0%
-Gringotts,LOC,12,44.4%
-Gringotts,WORK_OF_ART,1,3.7%
-Gringotts,PERSON,2,7.4%
-Gringotts,PRODUCT,1,3.7%
-Gringotts,FAC,1,3.7%
-Wizards,ORG,3,100.0%
+early the next morning,TIME,1,100.0%
+five Knuts,QUANTITY,1,100.0%
+Knuts,WORK_OF_ART,1,100.0%
+Mm,PERSON,1,100.0%
+D'yeh,PERSON,1,50.0%
+D'yeh,ORG,1,50.0%
+Gringotts,LOC,12,50.0%
+Gringotts,ORG,7,29.2%
+Gringotts,PERSON,4,16.7%
+Gringotts,WORK_OF_ART,1,4.2%
+Fer Dumbledore,PERSON,1,100.0%
 Fetchin,PERSON,1,100.0%
+rob Gringotts,PERSON,2,100.0%
 hundreds of miles,QUANTITY,1,100.0%
-Deep,ORG,1,100.0%
-Daily Prophet,WORK_OF_ART,2,100.0%
-Magic,PRODUCT,5,100.0%
+Underground,LOC,3,100.0%
+the Daily Prophet,WORK_OF_ART,1,50.0%
+the Daily Prophet,LOC,1,50.0%
 Cornelius Fudge,PERSON,1,100.0%
-Bungler,ORG,1,100.0%
 every morning,TIME,1,100.0%
-Ministry of Magic do,ORG,1,100.0%
-five minutes',TIME,2,100.0%
+Crikey,PERSON,1,100.0%
+five minutes' time,TIME,2,100.0%
 the night before,TIME,1,100.0%
 First-year,DATE,1,100.0%
 1,CARDINAL,1,100.0%
 2,CARDINAL,2,100.0%
 day,DATE,1,100.0%
-The Standard Book of Spells (Grade 1,WORK_OF_ART,1,100.0%
-Miranda Goshawk A History of Magic by Bathilda Bagshot,PERSON,1,100.0%
-Adalbert,PERSON,1,100.0%
-Beginners' Guide to Transfiguration,WORK_OF_ART,1,100.0%
-Emetic Switch,PERSON,1,100.0%
-Fungi,ORG,2,66.7%
-Fungi,GPE,1,33.3%
-Phyllida,ORG,1,100.0%
-Magical Drafts,PRODUCT,1,100.0%
-Arsenius Jigger,PERSON,1,100.0%
+3,CARDINAL,2,100.0%
+One winter,DATE,1,100.0%
+The Standard Book of Spells (Grade,WORK_OF_ART,1,100.0%
+Miranda Goshawk A History of Magic,ORG,1,100.0%
+Bathilda Bagshot Magical Theory,ORG,1,100.0%
+Adalbert Waffling,ORG,1,100.0%
+Emetic,NORP,1,100.0%
+Phyllida Spore Magical Drafts,PERSON,1,100.0%
+Arsenius Jigger Fantastic Beasts,ORG,1,100.0%
+Find Them,WORK_OF_ART,1,100.0%
 Newt Scamander,PERSON,1,100.0%
 A Guide to Self-Protection,ORG,1,100.0%
 Quentin Trimble,PERSON,1,100.0%
-FIRST YEARS,DATE,1,100.0%
-Underground,LOC,2,100.0%
-the Leaky Cauldron,WORK_OF_ART,2,22.2%
-the Leaky Cauldron,ORG,6,66.7%
-the Leaky Cauldron,FAC,1,11.1%
+FIRST,ORDINAL,1,100.0%
+YEARS,DATE,1,100.0%
+the Leaky Cauldron,WORK_OF_ART,1,11.1%
+the Leaky Cauldron,PRODUCT,4,44.4%
+the Leaky Cauldron,ORG,1,11.1%
+the Leaky Cauldron,FAC,3,33.3%
 Tom,PERSON,1,100.0%
 The Leaky Cauldron,ORG,1,100.0%
 Doris Crockford,PERSON,3,100.0%
 Diggle,PERSON,1,100.0%
 Dedalus Diggle's,PERSON,1,100.0%
-Quirrell,PERSON,20,18.0%
-Quirrell,ORG,91,82.0%
+Quirrell,PERSON,43,39.1%
+Quirrell,ORG,67,60.9%
 almost ten minutes,TIME,1,100.0%
+a year,DATE,2,100.0%
 the Black Forest,ORG,1,100.0%
-Diagon Alley,PERSON,7,100.0%
+Hags,ORG,1,100.0%
+Diagon Alley,ORG,6,100.0%
 Brass,ORG,1,100.0%
-Pewter,PERSON,1,100.0%
+Pewter,GPE,1,100.0%
+Collapsible,PRODUCT,1,100.0%
 about eight,CARDINAL,1,100.0%
-Apothecary,ORG,2,100.0%
 seventeen,CARDINAL,1,100.0%
-Sickles,PERSON,1,33.3%
-Sickles,ORG,2,66.7%
-Eeylops Owl Emporium,ORG,2,100.0%
+Sickles,PERSON,3,100.0%
 Tawny,GPE,1,100.0%
 Screech,ORG,1,100.0%
 "Barn, Brown",ORG,1,100.0%
-Nimbus,ORG,15,100.0%
-the moon,LOC,1,100.0%
+Nimbus Two Thousand,PRODUCT,5,83.3%
+Nimbus Two Thousand,WORK_OF_ART,1,16.7%
 Yeh'd,PERSON,1,100.0%
 About a hundred,CARDINAL,1,100.0%
 Morning,WORK_OF_ART,1,100.0%
-YouKnow,ORG,1,100.0%
-seven hundred and thirteen,CARDINAL,3,100.0%
-Griphook,ORG,6,50.0%
-Griphook,LAW,2,16.7%
-Griphook,LOC,1,8.3%
+seven hundred and thirteen,CARDINAL,5,100.0%
+Griphook,WORK_OF_ART,9,75.0%
 Griphook,PERSON,3,25.0%
-seven hundred and,QUANTITY,3,100.0%
-thirteen,CARDINAL,3,100.0%
-Stalagmite,PERSON,1,100.0%
-Seventeen,ORG,1,100.0%
-Galleon,ORG,1,100.0%
-twenty-nine,CARDINAL,1,100.0%
-Vault,GPE,1,100.0%
+Stalagmite,ORG,1,100.0%
+Galleons,PERSON,1,100.0%
+Seventeen,CARDINAL,1,100.0%
+Galleon,FAC,1,100.0%
+twenty-nine,QUANTITY,1,100.0%
+seven hundred,CARDINAL,2,100.0%
+thirteen,CARDINAL,1,100.0%
+every ten years,DATE,1,100.0%
 Malkin,PERSON,7,100.0%
-Quidditch,PERSON,44,86.3%
-Quidditch,ORG,7,13.7%
+first years,DATE,5,100.0%
+Quidditch,ORG,40,81.6%
+Quidditch,PERSON,9,18.4%
 the minute,TIME,1,100.0%
-Slytherin,PRODUCT,26,65.0%
-Slytherin,PERSON,11,27.5%
-Slytherin,LANGUAGE,1,2.5%
-Slytherin,LOC,1,2.5%
-Slytherin,ORG,1,2.5%
-Hufflepuff,GPE,5,35.7%
-Hufflepuff,PERSON,9,64.3%
-Mmm,PERSON,1,100.0%
+Slytherin,PRODUCT,38,84.4%
+Slytherin,WORK_OF_ART,4,8.9%
+Slytherin,LANGUAGE,1,2.2%
+Slytherin,PERSON,1,2.2%
+Slytherin,FAC,1,2.2%
+Hufflepuff,GPE,13,86.7%
+Hufflepuff,FAC,1,6.7%
+Hufflepuff,LANGUAGE,1,6.7%
 Years an' years ago,DATE,1,100.0%
-Flourish,ORG,1,100.0%
-Blotts,GPE,1,100.0%
+Flourish and,WORK_OF_ART,1,100.0%
+Blotts,PERSON,1,100.0%
 Countercurses,PERSON,1,100.0%
+Bewitch,PERSON,1,100.0%
 Hair Loss,ORG,1,100.0%
 Jelly-Legs,ORG,1,100.0%
 Vindictus Viridian,PERSON,1,100.0%
-yeh'll,PERSON,1,100.0%
 twenty-one Galleons,CARDINAL,1,100.0%
 years ago,DATE,1,100.0%
 Twenty minutes later,TIME,1,100.0%
-Ollivanders,PERSON,1,33.3%
-Ollivanders,ORG,2,66.7%
-Fine Wands,PERSON,1,100.0%
+Ollivanders,ORG,1,100.0%
 382,CARDINAL,1,100.0%
-B.C.,GPE,1,100.0%
 thousands,CARDINAL,3,100.0%
-only yesterday,DATE,1,100.0%
-Ten,CARDINAL,2,100.0%
-a quarter inches,QUANTITY,1,100.0%
-Nice,GPE,2,100.0%
-Ollivander,PERSON,16,88.9%
-Ollivander,NORP,2,11.1%
+Ten and a,DATE,1,100.0%
+quarter inches,QUANTITY,1,100.0%
+Ollivander,PERSON,17,100.0%
 Eleven inches,QUANTITY,1,100.0%
-Thirteen,CARDINAL,1,100.0%
+a-half inches,QUANTITY,2,100.0%
 Yew,PERSON,2,100.0%
-"Oak, sixteen inches",QUANTITY,1,100.0%
-Beechwood,GPE,1,100.0%
+sixteen inches,QUANTITY,1,100.0%
+Beechwood,ORG,1,100.0%
 Nine inches,QUANTITY,1,100.0%
-Maple,PERSON,1,100.0%
+Maple,GPE,1,100.0%
 Seven inches,QUANTITY,1,100.0%
-eight and a half inches,QUANTITY,1,100.0%
+eight and a,DATE,1,100.0%
+half inches,QUANTITY,1,100.0%
 eleven inches,QUANTITY,1,100.0%
 seven,CARDINAL,6,100.0%
 late afternoon,TIME,1,100.0%
 Paddington,GPE,1,100.0%
-Yeh've,GPE,1,100.0%
+Yeh've,ORG,1,100.0%
+Hogwarts --,ORG,1,100.0%
+King's,ORG,3,100.0%
+Cross,ORG,2,100.0%
 SIX,CARDINAL,1,100.0%
-NINE,CARDINAL,2,100.0%
 last month,DATE,1,100.0%
 Half,CARDINAL,2,100.0%
-Hedwig,PERSON,10,100.0%
-Every night,TIME,1,100.0%
-September the first,DATE,1,100.0%
+Hedwig,ORG,2,15.4%
+Hedwig,PERSON,9,69.2%
+Hedwig,WORK_OF_ART,2,15.4%
+A History of Magic,WORK_OF_ART,1,100.0%
+late into the night,TIME,1,100.0%
 the last day of August,DATE,1,100.0%
-King's Cross,ORG,4,100.0%
-nine,CARDINAL,11,100.0%
-three-quarters,CARDINAL,2,33.3%
-three-quarters,DATE,4,66.7%
-eleven o'clock,TIME,4,100.0%
-Nine,CARDINAL,3,100.0%
+King's Cross,ORG,3,100.0%
+Magic,ORG,3,100.0%
+nine and three-quarters,DATE,3,100.0%
+eleven o'clock,TIME,3,100.0%
+Nine,CARDINAL,2,100.0%
+three-quarters,DATE,3,100.0%
 Two hours later,TIME,1,100.0%
 half past ten,CARDINAL,1,100.0%
+nine,CARDINAL,7,100.0%
+ten,CARDINAL,3,100.0%
+ten minutes,TIME,3,100.0%
 third,ORDINAL,16,100.0%
 Ginny,PERSON,4,100.0%
-Percy,PERSON,34,100.0%
-Fred,PERSON,28,96.6%
-Fred,ORG,1,3.4%
-George,PERSON,21,100.0%
+Percy,PERSON,33,100.0%
+Fred,PERSON,29,100.0%
+George,PERSON,22,100.0%
+a second later,DATE,2,100.0%
 First,ORDINAL,3,100.0%
-Ron,PERSON,426,100.0%
-Hogwarts Express,ORG,1,100.0%
+Ron,PERSON,421,100.0%
+nine and ten,DATE,1,100.0%
+Hogwarts Express,ORG,2,100.0%
 eleven O'clock,TIME,1,100.0%
-Gran,PERSON,3,100.0%
-Neville,PERSON,69,60.0%
-Neville,GPE,40,34.8%
-Neville,ORG,6,5.2%
+Gran,WORK_OF_ART,1,33.3%
+Gran,PERSON,2,66.7%
+Neville,PERSON,114,99.1%
+Neville,ORG,1,0.9%
 Lee,PERSON,2,100.0%
-Oy,PERSON,2,66.7%
-Oy,WORK_OF_ART,1,33.3%
-C'mere,ORG,1,100.0%
-Aaah,PERSON,1,100.0%
+Oy,ORG,3,100.0%
 Ronnie,PERSON,1,100.0%
-"""A minute --""",WORK_OF_ART,1,100.0%
-this year,DATE,6,100.0%
-Blown up a toilet,WORK_OF_ART,1,100.0%
+A minute,WORK_OF_ART,1,100.0%
+Percy the Prefect,PERSON,1,100.0%
+two -- this year,DATE,1,100.0%
 Ronniekins,PERSON,1,100.0%
-Houses,ORG,2,100.0%
+his first day,DATE,1,100.0%
 Lee Jordan's,PERSON,1,100.0%
 George Weasley,PERSON,8,100.0%
+Mom,PERSON,1,100.0%
 Weasleys,PERSON,12,100.0%
 Five,CARDINAL,4,100.0%
 sixth,ORDINAL,1,100.0%
 Bill,PERSON,5,100.0%
 Charlie,PERSON,21,100.0%
-Scabbers,ORG,13,100.0%
+Scabbers,PERSON,6,46.2%
+Scabbers,ORG,4,30.8%
+Scabbers,NORP,3,23.1%
 a month ago,DATE,2,100.0%
-Around half past twelve,CARDINAL,1,100.0%
-as many Mars Bars,CARDINAL,1,100.0%
+Around half,CARDINAL,1,100.0%
+Mars,LOC,4,100.0%
 Mars Bars,LOC,1,100.0%
 Bettie Bott's,PERSON,3,100.0%
-Every Flavor Beans,ORG,4,100.0%
-Drooble,ORG,1,100.0%
-Chocolate Frogs,ORG,5,100.0%
-Pumpkin Pasties,ORG,1,100.0%
+Every Flavor Beans,ORG,5,100.0%
+Drooble's Best Blowing Gum,ORG,1,100.0%
+Chocolate Frogs,PRODUCT,4,100.0%
 Licorice Wands,PERSON,1,100.0%
+Hungry,NORP,1,100.0%
 Starving,WORK_OF_ART,1,100.0%
 Agrippa,PERSON,3,100.0%
 about five hundred,CARDINAL,1,100.0%
 Ptolemy,PERSON,1,100.0%
-HOGWARTS,PERSON,1,100.0%
-Grindelwald,GPE,2,100.0%
+Chocolate Frog,PRODUCT,1,100.0%
+Grindelwald,PERSON,2,100.0%
 1945,DATE,2,100.0%
 Nicolas Flamel,PERSON,11,100.0%
 Morgana,PERSON,2,100.0%
 about six,CARDINAL,1,100.0%
-Hengist,PERSON,1,100.0%
-Woodcroft,ORG,1,100.0%
-Alberic Grunnion,PERSON,1,100.0%
-Circe,NORP,1,100.0%
+Hengist,NORP,1,100.0%
+"Woodcroft, Alberic Grunnion",ORG,1,100.0%
+Circe,PERSON,1,100.0%
 Paracelsus,ORG,1,100.0%
 Cliodna,ORG,1,100.0%
 Bertie Bott's,PERSON,1,100.0%
-Bleaaargh,ORG,1,100.0%
-Sunshine,PERSON,1,100.0%
+Unicorn,ORG,1,100.0%
 Hermione Granger,PERSON,16,100.0%
 Ron Weasley,PERSON,1,100.0%
-Hermione,PERSON,250,99.2%
-Hermione,ORG,2,0.8%
-the Twentieth Century,DATE,1,100.0%
-Gryffindor,PERSON,76,100.0%
-Ravenclaw,PERSON,9,100.0%
+Hermione,PERSON,252,100.0%
+Gryffindor,ORG,55,94.8%
+Gryffindor,PERSON,2,3.4%
+Gryffindor,FAC,1,1.7%
+Dad,PERSON,1,100.0%
 Romania,GPE,5,100.0%
 Africa,LOC,1,100.0%
-Dark,ORG,1,100.0%
+Dark,ORG,2,100.0%
 Harry Potter's,PERSON,2,100.0%
-Crabbe,ORG,13,65.0%
-Crabbe,GPE,5,25.0%
-Crabbe,PERSON,2,10.0%
-Goyle,PERSON,11,45.8%
-Goyle,GPE,13,54.2%
-Malfoy,ORG,104,92.9%
-Malfoy,PERSON,8,7.1%
+Crabbe,PERSON,21,100.0%
+Goyle,PERSON,24,100.0%
+Malfoy,PERSON,69,63.3%
+Malfoy,ORG,40,36.7%
 Draco Malfoy,PERSON,9,100.0%
 the Chocolate Frogs,PRODUCT,1,100.0%
 Ron - Ron,PERSON,1,100.0%
-Scabbets,GPE,1,100.0%
+Scabbets,ORG,1,100.0%
 Firs,WORK_OF_ART,1,33.3%
 Firs,ORG,2,66.7%
 Ye,PERSON,1,100.0%
 Trevor,PERSON,3,100.0%
 SEVEN,CARDINAL,1,100.0%
 the first years,DATE,8,100.0%
-the Great Hall,FAC,12,92.3%
-the Great Hall,ORG,1,7.7%
+the Great Hall,FAC,12,100.0%
+Ravenclaw,FAC,1,25.0%
+Ravenclaw,WORK_OF_ART,1,25.0%
+Ravenclaw,ORG,2,50.0%
 the end of the year,DATE,1,100.0%
 The Sorting Ceremony,WORK_OF_ART,1,100.0%
 About twenty,CARDINAL,1,100.0%
+Friar,PERSON,1,100.0%
 The Sorting Ceremony's,WORK_OF_ART,1,100.0%
 thousands and thousands,CARDINAL,1,100.0%
+"Hogwarts, A History",ORG,1,100.0%
 The Sorting Hat,ORG,1,50.0%
 The Sorting Hat,WORK_OF_ART,1,50.0%
 Hufflepuffis,PERSON,1,100.0%
+Cap,PERSON,1,100.0%
 Abbott,PERSON,1,100.0%
-Hannah,FAC,2,66.7%
-Hannah,PERSON,1,33.3%
-HUFFLEPUFF,ORG,1,100.0%
+Hannah,PERSON,3,100.0%
+HUFFLEPUFF,ORG,3,100.0%
 Susan,PERSON,2,100.0%
+Boot,PERSON,1,100.0%
 Terry,PERSON,2,100.0%
-Ravenclaws,PERSON,1,100.0%
+RAVENCLAW,WORK_OF_ART,1,100.0%
 Brocklehurst,ORG,1,100.0%
 Mandy,PERSON,1,100.0%
-Lavender,WORK_OF_ART,1,50.0%
+Brown,PERSON,1,100.0%
+Lavender,LAW,1,50.0%
 Lavender,PERSON,1,50.0%
 Bulstrode,PERSON,1,100.0%
 Millicent,PERSON,1,100.0%
 Finch-Fletchley,ORG,1,100.0%
 Justin,ORG,1,100.0%
 Finnigan,PERSON,1,100.0%
-Seamus,PERSON,14,100.0%
-Granger,PERSON,4,100.0%
+Seamus,PERSON,12,100.0%
+Granger,PERSON,8,100.0%
 Neville Longbottom,PERSON,2,100.0%
-"MacDougal, Morag",WORK_OF_ART,1,100.0%
+GRYFFINDOR,ORG,1,100.0%
+MacDougal,PERSON,1,100.0%
+Morag,PERSON,1,100.0%
 Moon,PERSON,1,100.0%
 Nott,PERSON,1,100.0%
 Patil,PERSON,3,100.0%
 Sally-Anne,PERSON,1,100.0%
-Hmm,PERSON,1,100.0%
-Percy the Prefect,PERSON,1,100.0%
-Weasley,PERSON,18,85.7%
-Weasley,ORG,3,14.3%
+The Harry Potter,WORK_OF_ART,1,100.0%
+Prefect,ORG,1,100.0%
+Weasley,PERSON,23,95.8%
+Weasley,ORG,1,4.2%
 the Chocolate Frog,PRODUCT,1,100.0%
 Quirtell,PERSON,1,100.0%
 only three,CARDINAL,1,100.0%
 Thomas,PERSON,1,100.0%
-Dean,PERSON,4,44.4%
-Dean,ORG,5,55.6%
-Black,LAW,1,100.0%
+Dean,PERSON,9,100.0%
+Black,NORP,1,100.0%
 Turpin,PERSON,1,100.0%
 Lisa,PERSON,1,100.0%
-Percy Weasley Pompously,PERSON,1,100.0%
+Percy Weasley,PERSON,3,100.0%
 Zabini,PERSON,1,100.0%
 Blaise,PERSON,1,100.0%
-the Sorting Hat,ORG,1,100.0%
+the Sorting Hat,FAC,1,100.0%
 ages ago,DATE,3,100.0%
 a new year,DATE,1,100.0%
-Nitwit,ORG,1,100.0%
-Oddment,ORG,1,100.0%
 nearly four hundred years,DATE,1,100.0%
-Nicholas de Mimsy-Porpington,PERSON,1,100.0%
-Gryffindor Tower,PERSON,1,100.0%
-Nicholas de Mimsy,PERSON,1,100.0%
+Nicholas de Mimsy,PERSON,2,100.0%
+Porpington,GPE,1,100.0%
+Gryffindor Tower,FAC,1,100.0%
 Seamus Finnigan,PERSON,6,100.0%
-Nearly Headless,WORK_OF_ART,1,100.0%
 Nicholas,PERSON,1,100.0%
-Slytherins,ORG,5,38.5%
-Slytherins,PERSON,8,61.5%
-six years in a row,DATE,1,100.0%
+this year,DATE,5,100.0%
+Slytherins,NORP,14,100.0%
+the cup six years in a row,DATE,1,100.0%
 The Bloody Baron's,ORG,1,50.0%
 The Bloody Baron's,WORK_OF_ART,1,50.0%
+Nearly Headless Nick,PERSON,1,100.0%
 Jell-O,ORG,1,100.0%
-half-and-half,TIME,1,100.0%
-Algie,ORG,2,66.7%
-Algie,PERSON,1,33.3%
+half-and-half,DATE,1,100.0%
 Blackpool,GPE,1,100.0%
-Great,GPE,1,100.0%
+Algie,PERSON,2,100.0%
 Enid,PERSON,1,100.0%
-Percy Weasley,PERSON,2,100.0%
-Snape,PERSON,170,100.0%
-the Dark Arts,FAC,1,100.0%
-Ahern,ORG,1,100.0%
+Snape,PERSON,165,100.0%
+the Dark Arts,FAC,1,25.0%
+the Dark Arts,ORG,3,75.0%
+Ahern,PERSON,1,100.0%
 First years,DATE,1,100.0%
-Filch,PERSON,3,7.1%
-Filch,ORG,39,92.9%
+Filch,PERSON,49,98.0%
+Filch,ORG,1,2.0%
 the second week,DATE,1,100.0%
-Hoggy Warty Hogwarts,PERSON,1,100.0%
+Hoggy Warty Hogwarts,ORG,1,100.0%
+bedtime,TIME,1,100.0%
+Peeves,WORK_OF_ART,1,11.1%
+Peeves,ORG,6,66.7%
+Peeves,PRODUCT,1,11.1%
+Peeves,PERSON,1,11.1%
 the Bloody Baron,ORG,3,100.0%
-Peeves,ORG,11,91.7%
-Peeves,PERSON,1,8.3%
 Baron'll,ORG,1,100.0%
-Caput Draconis,WORK_OF_ART,1,100.0%
-next day,DATE,1,100.0%
-EIGHT,CARDINAL,1,100.0%
+next day,DATE,2,100.0%
 a hundred and forty-two,CARDINAL,1,100.0%
-Headless Nick,PERSON,1,100.0%
+Gryffindors,PRODUCT,3,75.0%
+Gryffindors,PERSON,1,25.0%
 Argus Filch,ORG,1,100.0%
-their very first morning,DATE,1,100.0%
+their very first morning,TIME,1,100.0%
 Norris,PERSON,12,92.3%
 Norris,ORG,1,7.7%
-just one,CARDINAL,1,100.0%
-two seconds,TIME,1,100.0%
-every Wednesday,TIME,1,100.0%
-Binns,PERSON,2,100.0%
+two seconds later,TIME,1,100.0%
+Wednesday,DATE,2,100.0%
+Herbology,PRODUCT,1,20.0%
+Herbology,NORP,3,60.0%
+Herbology,WORK_OF_ART,1,20.0%
+Binns,PERSON,3,100.0%
 next morning,TIME,1,100.0%
-Emetic,PERSON,1,100.0%
-Flitwick,PERSON,20,100.0%
-Defense Against the Dark Arts,ORG,2,100.0%
+Emetic the Evil and Uric the Oddball,WORK_OF_ART,1,100.0%
+Flitwick,PERSON,18,90.0%
+Flitwick,GPE,1,5.0%
+Flitwick,ORG,1,5.0%
+Charms,PERSON,4,100.0%
+these days,DATE,4,100.0%
 African,NORP,1,100.0%
 an important day,DATE,1,100.0%
-Double Potions with the Slytherins,WORK_OF_ART,1,100.0%
 Slytherin House,ORG,1,100.0%
-Wish McGonagall,PERSON,1,100.0%
-Gryffindor House,PERSON,2,100.0%
+Wish McGonagall,WORK_OF_ART,1,100.0%
+Gryffindor House,ORG,2,100.0%
 the day before,DATE,1,100.0%
 the first morning,TIME,1,100.0%
 about a hundred,CARDINAL,1,100.0%
-Dear Harry,PERSON,1,100.0%
 afternoons,TIME,1,100.0%
-around three,CARDINAL,1,100.0%
 first week,DATE,1,100.0%
 Hagrid Harry,PERSON,1,100.0%
-the end of the first Potions lesson,DATE,1,100.0%
-One Thousand,QUANTITY,2,100.0%
+the end of the,DATE,1,100.0%
+One Thousand Magical Herbs,QUANTITY,1,100.0%
 the Draught of Living Death,ORG,1,100.0%
-Gryffindors,ORG,6,100.0%
-an hour,TIME,1,100.0%
+an hour later,TIME,2,100.0%
 his very first week,DATE,1,100.0%
 five to three,CARDINAL,1,100.0%
-Fang,ORG,14,82.4%
-Fang,PERSON,3,17.6%
+Fang,PERSON,15,88.2%
+Fang,ORG,2,11.8%
 Fitch,PERSON,2,100.0%
-Rubbish,NORP,3,100.0%
-Investigations,ORG,1,100.0%
+LATEST Investigations,ORG,1,100.0%
 31 July,DATE,1,100.0%
 the same day,DATE,1,100.0%
 this afternoon,TIME,1,100.0%
 earlier that same day,DATE,1,100.0%
-DUEL Harry,PERSON,1,100.0%
+NINE,CARDINAL,1,100.0%
 first-year,DATE,2,100.0%
 Thursday,DATE,2,100.0%
-Malfay,PERSON,3,100.0%
 about first years,DATE,1,100.0%
 Dean Thomas,PERSON,2,100.0%
-West Ham,GPE,2,100.0%
+West Ham,ORG,2,100.0%
 Quidditch Through the Ages,WORK_OF_ART,1,100.0%
 Remembrall,PERSON,8,100.0%
-three-thirty that afternoon,TIME,1,100.0%
+Malfay,PERSON,2,100.0%
+three-thirty,TIME,1,100.0%
 breezy day,DATE,1,100.0%
+twenty,QUANTITY,1,50.0%
+twenty,CARDINAL,1,50.0%
 Stick,FAC,1,100.0%
+UPF,ORG,1,100.0%
 Hermione Granger's,PERSON,1,100.0%
 a few feet,QUANTITY,2,100.0%
+Hooch,PERSON,7,100.0%
 twelve feet,QUANTITY,1,100.0%
 twenty feet,QUANTITY,1,100.0%
-WHAM,PERSON,1,100.0%
 Parvati Patil,PERSON,3,100.0%
 Longbottom,PERSON,7,100.0%
 Pansy Parkinson,PERSON,1,100.0%
-Parvati,ORG,1,100.0%
+Parvati,PERSON,1,100.0%
+next second,TIME,1,100.0%
+HARRY POTTER,PERSON,1,100.0%
 two weeks,DATE,3,100.0%
-Wood,PERSON,9,20.0%
-Wood,ORG,35,77.8%
-Wood,GPE,1,2.2%
+Wood,PERSON,18,48.6%
+Wood,ORG,16,43.2%
+Wood,GPE,3,8.1%
 fifth-year,DATE,1,100.0%
-Flitwicles,ORG,1,100.0%
+Flitwicles,GPE,1,100.0%
 Oliver Wood,PERSON,3,100.0%
-Seeker,PERSON,12,100.0%
+Seeker,PERSON,11,100.0%
 fifty-foot,QUANTITY,1,100.0%
 Charlie Weasley,PERSON,2,100.0%
-Seven,CARDINAL,2,100.0%
+"Quidditch, Potter",ORG,1,100.0%
 Severus Snape,PERSON,1,100.0%
 weeks,DATE,2,100.0%
-first years,DATE,5,100.0%
 about a century,DATE,1,100.0%
-year,DATE,1,100.0%
+the afternoon,TIME,2,100.0%
 Lee Jordan,PERSON,7,100.0%
 Gregory,PERSON,1,100.0%
 our first week,DATE,1,100.0%
 Tonight,TIME,1,100.0%
+Wizard's,ORG,1,100.0%
+Wands,PERSON,1,100.0%
+Midnight,TIME,3,100.0%
 Malfoy'll,ORG,1,100.0%
 all evening,TIME,1,100.0%
 Malfoys,PERSON,2,100.0%
 Half-past eleven,DATE,1,100.0%
 Switching Spells,PERSON,1,100.0%
-the Fat Lady's,PERSON,1,100.0%
 about a minute,TIME,1,100.0%
 the Bloody Baron's,ORG,1,100.0%
-Bogies,ORG,1,100.0%
-moonlight,TIME,4,100.0%
+Bogies,ORG,1,50.0%
+Bogies,PRODUCT,1,50.0%
+moonlight,TIME,2,100.0%
 Cups,ORG,1,100.0%
+miles,CARDINAL,1,100.0%
 more than a dozen,CARDINAL,1,100.0%
-around at midnight,TIME,1,100.0%
-Ickle Firsties,PERSON,1,100.0%
 Alohomora,ORG,2,100.0%
 the last minute,TIME,1,100.0%
 seventh,ORDINAL,1,100.0%
 TEN,CARDINAL,1,100.0%
+Hogwarts the,WORK_OF_ART,1,100.0%
 about two inches,QUANTITY,1,100.0%
 about a week later,DATE,1,100.0%
-Two Thousand,QUANTITY,10,100.0%
 seven o'clock,TIME,2,100.0%
 McGonagall Harry,PERSON,2,100.0%
-Comet Two Sixty,EVENT,1,100.0%
+A Nimbus Two Thousand,WORK_OF_ART,2,100.0%
+Nimbus,ORG,1,100.0%
+Sleek,PERSON,1,100.0%
+Two Thousand,CARDINAL,1,100.0%
 Hundreds,CARDINAL,1,100.0%
 fifty feet,QUANTITY,1,100.0%
-this evening,TIME,1,100.0%
-Three Chasers,WORK_OF_ART,1,100.0%
-Quaffle,ORG,15,93.8%
-Quaffle,PERSON,1,6.2%
-The Chasers throw the Quaffle,WORK_OF_ART,2,100.0%
-the Keeper -I'm Keeper,WORK_OF_ART,1,100.0%
-"Three Chasers, one Keeper",WORK_OF_ART,1,100.0%
-Harry two,PERSON,1,100.0%
-Bludger,PERSON,9,100.0%
-two Beaters,PERSON,1,100.0%
-Bludgers,PERSON,1,50.0%
-Bludgers,ORG,1,50.0%
-Three Chasers try and score with the Quaffle,WORK_OF_ART,1,100.0%
-Keeper,ORG,1,100.0%
-the Bludgers,ORG,1,100.0%
+Quaffle,ORG,7,36.8%
+Quaffle,PERSON,12,63.2%
+Ten,CARDINAL,1,100.0%
+the Keeper -I'm Keeper for Gryffindor,WORK_OF_ART,1,100.0%
+Bludger,PERSON,7,100.0%
+The Bludgers rocket around,WORK_OF_ART,1,100.0%
+Bludgers,WORK_OF_ART,2,50.0%
+Bludgers,PERSON,2,50.0%
+Keeper,FAC,1,100.0%
+Beaters,PERSON,1,100.0%
 fourth,ORDINAL,2,100.0%
-the Golden Snitch,PERSON,2,100.0%
-"the Chasers, Beaters, Bludgers",PRODUCT,1,100.0%
+the Golden Snitch,ORG,2,100.0%
 Snitch,PERSON,16,100.0%
-hundred,CARDINAL,1,100.0%
-fifty,CARDINAL,6,100.0%
+an extra hundred and fifty,CARDINAL,1,100.0%
 three months,DATE,1,100.0%
-a single one,CARDINAL,1,100.0%
+a single,CARDINAL,1,100.0%
 half an hour,TIME,2,100.0%
-Quidditch cup'll,PERSON,1,100.0%
-England,GPE,2,100.0%
-three evenings a week,DATE,1,100.0%
-two months,DATE,1,100.0%
+Quidditch cup'll,ORG,1,100.0%
+England,GPE,1,100.0%
+three evenings,DATE,1,100.0%
+Hogwarts two months,DATE,1,100.0%
 Halloween,DATE,8,100.0%
-Swish,NORP,1,100.0%
-Baruffio,PERSON,1,100.0%
+Swish,PERSON,1,100.0%
+Wizard Baruffio,PERSON,1,100.0%
 Wingardium Leviosa,PERSON,3,100.0%
-Levi-o-sa,ORG,1,100.0%
 about four feet,QUANTITY,1,100.0%
-Miss Granger's,PERSON,1,100.0%
+the Great Hall for,FAC,1,100.0%
 A thousand,CARDINAL,1,100.0%
 a thousand,CARDINAL,1,100.0%
+Houses,ORG,1,100.0%
 Hufflepuffs,PERSON,3,100.0%
-Percy'd,ORG,1,100.0%
 Twelve feet,QUANTITY,1,100.0%
+fifty,CARDINAL,5,100.0%
+Gryffindor for this,ORG,1,100.0%
+Gryffindor five,ORG,1,100.0%
 more than ten,CARDINAL,1,100.0%
 twelve-foot,QUANTITY,1,100.0%
 ELEVEN,CARDINAL,1,100.0%
-QUIDDITCH,PRODUCT,1,100.0%
+QUIDDITCH,FAC,1,100.0%
 November,DATE,1,100.0%
-The Quidditch season,DATE,1,100.0%
+Every morning,TIME,1,100.0%
+season,DATE,1,100.0%
 Hermlone,PERSON,1,100.0%
-last-minute,TIME,2,100.0%
-the Ages,DATE,1,100.0%
-seven hundred,CARDINAL,1,100.0%
+Quidditch Through,ORG,2,100.0%
+the Ages,DATE,2,100.0%
 World Cup,EVENT,1,100.0%
 1473,CARDINAL,1,100.0%
-up months later,DATE,1,100.0%
+turn up months later,DATE,1,100.0%
 the Sahara Desert,LOC,1,100.0%
 The day,DATE,1,100.0%
-Quidditch Through,PERSON,1,100.0%
-POTTER,WORK_OF_ART,1,100.0%
+"Harry, Ron",PERSON,5,100.0%
+the Ages back,DATE,1,100.0%
 a few hours,TIME,1,100.0%
 The next morning,TIME,2,100.0%
-The Great Hall,ORG,1,100.0%
+The Great Hall,FAC,1,100.0%
 an hour's,TIME,1,100.0%
 the top row,DATE,1,100.0%
-Chaser Angelina Johnson,PERSON,1,100.0%
+Angelina Johnson,PERSON,2,100.0%
 Fred Weasley,PERSON,4,100.0%
 Oliver,PERSON,1,100.0%
-the Slytherin Captain,PRODUCT,1,100.0%
 Marcus Flint,PERSON,5,100.0%
 a sixth year,DATE,1,100.0%
-Flint,GPE,9,100.0%
+Flint,GPE,8,88.9%
+Flint,PERSON,1,11.1%
 Mount,LOC,1,100.0%
 Fifteen,CARDINAL,1,100.0%
-Angelina Johnson,PERSON,1,100.0%
+Chaser,ORG,1,100.0%
 JORDAN,PERSON,1,100.0%
 Alicia Spinnet,PERSON,1,100.0%
 Oliver Wood's,PERSON,1,100.0%
@@ -815,263 +807,260 @@ Chaser Katie Bell,ORG,1,100.0%
 Adrian Pucey,PERSON,2,100.0%
 Gryffindor Beater,PERSON,1,100.0%
 Angelina,PERSON,2,100.0%
-Bletchley,PERSON,1,100.0%
+Keeper Bletchley,ORG,1,100.0%
 Bin,PERSON,2,100.0%
-Slytherin in possession,WORK_OF_ART,2,100.0%
-Chaser Pucey,PERSON,1,100.0%
+Chaser Pucey ducks,WORK_OF_ART,1,100.0%
 Chaser Bell,ORG,1,100.0%
 Slytherin Seeker Terence Higgs,PERSON,1,100.0%
-Jordan,PERSON,2,100.0%
-the Gryffindor Seeker,PERSON,1,100.0%
+Higgs,PERSON,1,100.0%
+Jordan,PERSON,1,50.0%
+Jordan,GPE,1,50.0%
+the Gryffindor Seeker,PRODUCT,1,100.0%
 Spinner,ORG,1,100.0%
+another Bludger,PERSON,1,100.0%
 Nimbus Two Thousands,ORG,1,100.0%
+Spinnet,PERSON,1,100.0%
 Bell,ORG,1,100.0%
+Reaching Snape,PERSON,1,100.0%
 perhaps thirty seconds,TIME,1,100.0%
 the last five minutes,TIME,1,100.0%
-twenty minutes,TIME,1,100.0%
+twenty minutes later,TIME,1,100.0%
 one hundred and seventy,CARDINAL,1,100.0%
 sixty,CARDINAL,2,100.0%
-Fluffy,ORG,20,80.0%
-Fluffy,PERSON,5,20.0%
+Rubbish,WORK_OF_ART,2,100.0%
 Greek,NORP,1,100.0%
-TWELVE,CARDINAL,1,100.0%
-THE MIRROR OF ERISED,WORK_OF_ART,1,100.0%
+TWELVE THE MIRROR OF ERISED,TIME,1,100.0%
 One morning,TIME,1,100.0%
 mid-December,DATE,1,100.0%
-several feet,QUANTITY,1,100.0%
+the holidays,DATE,3,100.0%
+Hogwarts for Christmas,ORG,1,100.0%
+Harry as Seeker,PERSON,1,100.0%
 the week before,DATE,1,100.0%
-the holidays,DATE,2,100.0%
-these days,DATE,3,100.0%
+Two enormous feet,QUANTITY,1,100.0%
+WEASLEY,PERSON,1,100.0%
+Malfoy and Snape,WORK_OF_ART,1,100.0%
 nearly Christmas,DATE,1,100.0%
 -the Great Hall,FAC,1,100.0%
-Festoons of holly,PERSON,1,100.0%
-many days,DATE,1,100.0%
 Flamel,PERSON,15,100.0%
 Great Wizards,ORG,1,100.0%
-Notable Magical Names of Our Time,WORK_OF_ART,1,100.0%
+A Study of Recent Developments,ORG,1,100.0%
 tens of thousands,CARDINAL,1,100.0%
+Dark Magic,PRODUCT,1,100.0%
+Defense Against the Dark Arts,ORG,1,100.0%
 Pince,PERSON,3,100.0%
 Five minutes later,TIME,1,100.0%
 the hour,TIME,1,100.0%
-English,LANGUAGE,1,100.0%
+English,NORP,1,100.0%
 Christmas Eve,DATE,1,100.0%
 early in the morning,TIME,1,100.0%
 Merry Christmas,WORK_OF_ART,2,100.0%
 fifty-pence,MONEY,1,100.0%
-fifty pence,MONEY,1,100.0%
+the fifty pence,MONEY,1,100.0%
 NMat,ORG,1,100.0%
 G.,PERSON,1,100.0%
 Gred,PERSON,1,100.0%
-Forge,PERSON,1,100.0%
+Percy thickly,PERSON,1,100.0%
 A hundred,CARDINAL,1,100.0%
 every few feet,QUANTITY,1,100.0%
-Christmas day ever,DATE,1,100.0%
-only moonlight,CARDINAL,1,100.0%
+Christmas day,DATE,1,100.0%
+only moonlight,TIME,1,100.0%
 The Restricted Section,WORK_OF_ART,1,100.0%
 two clawed feet,QUANTITY,1,100.0%
 at least ten,CARDINAL,1,100.0%
 this summer,DATE,3,100.0%
+the next night,TIME,1,100.0%
 nearly an hour,TIME,1,100.0%
-the Quidditch cup,PERSON,2,100.0%
+the Quidditch cup,PRODUCT,1,100.0%
 all last night,TIME,1,100.0%
-all night,TIME,2,100.0%
-the Mirror of Erised,ORG,5,100.0%
+all night,TIME,1,100.0%
+the Mirror of Erised,PRODUCT,1,33.3%
+the Mirror of Erised,ORG,2,66.7%
 Ronald Weasley,PERSON,3,100.0%
-The Mirror will be moved to a new home,WORK_OF_ART,1,100.0%
+Mirror,ORG,1,100.0%
 THIRTEEN,CARDINAL,1,100.0%
 NICOLAS FLAMEL Dumbledore,PERSON,1,100.0%
 the Christmas holidays,DATE,1,100.0%
-three nights,TIME,1,100.0%
+three nights in a row,DATE,1,100.0%
 seven years,DATE,2,100.0%
 Chess,ORG,1,100.0%
-the Leg-Locker Curse,LAW,1,50.0%
-the Leg-Locker Curse,PRODUCT,1,50.0%
+Malfoy's,ORG,1,100.0%
+the Famous Wizard,PRODUCT,1,100.0%
 Nicolas Flamel',PERSON,1,100.0%
-weeks ago,DATE,1,100.0%
-the Sorcerer's Stone,ORG,5,100.0%
-the Elixir of Life,ORG,3,100.0%
-the Sorcerer's Stone over the centuries,ORG,1,100.0%
+the library weeks ago,DATE,1,100.0%
+the Elixir of Life,ORG,2,100.0%
+Stone,PERSON,31,100.0%
+the centuries,DATE,1,100.0%
 six hundred and sixty-fifth,CARDINAL,1,100.0%
 Devon,PERSON,1,100.0%
 Perenelle,PERSON,1,50.0%
 Perenelle,GPE,1,50.0%
 six hundred and fifty-eight,CARDINAL,1,100.0%
-Sorcerer's Stone,FAC,1,100.0%
-Stone,PERSON,10,66.7%
-Stone,ORG,5,33.3%
 Study of Recent Developments,ORG,1,100.0%
-six hundred and,QUANTITY,1,100.0%
-sixty-five,CARDINAL,1,100.0%
-Sorcerer,PERSON,3,100.0%
+six hundred and sixty-five,CARDINAL,1,100.0%
 weekly,DATE,1,100.0%
 the next afternoon,TIME,1,100.0%
+the Leg-Locker Curse,PERSON,1,100.0%
 Locomotor Mortis,PERSON,1,100.0%
 Finish,NORP,1,100.0%
+barely lasted,TIME,1,100.0%
 the last hour,TIME,1,100.0%
+Severus,PERSON,4,100.0%
 Pomftey,PERSON,1,100.0%
-Fluffy -,ORG,1,100.0%
 next Tuesday,DATE,1,100.0%
 FOURTEEN,CARDINAL,1,100.0%
-NORBERT THE NORWEGIAN RIDGEBACK Quirrell,ORG,1,100.0%
 the weeks,DATE,1,100.0%
 Ten weeks,DATE,1,100.0%
 six hundred years old,DATE,1,100.0%
 the second year,DATE,1,100.0%
-Easter,ORG,1,100.0%
+Easter,GPE,1,100.0%
 one afternoon,TIME,2,100.0%
 months,DATE,1,100.0%
-summer,DATE,2,100.0%
+summer,DATE,1,100.0%
 Dittany,WORK_OF_ART,1,100.0%
+One Thousand,CARDINAL,1,100.0%
 Jus,PERSON,1,100.0%
 St,PERSON,1,100.0%
+Shhhh,WORK_OF_ART,1,100.0%
 a minute later,TIME,1,100.0%
-Dragon Species of Great Britain,ORG,1,100.0%
+Dragon Species of Great,ORG,1,100.0%
 Ireland,GPE,1,100.0%
+Egg,GPE,1,100.0%
 Inferno,GPE,1,100.0%
-Dragon Keeper's Guide,WORK_OF_ART,1,100.0%
-the Warlocks' Convention of 1709,WORK_OF_ART,1,100.0%
-Welsh Green,PERSON,1,100.0%
-Hebridean Blacks,PERSON,1,100.0%
+A Dragon Keeper's Guide,WORK_OF_ART,1,100.0%
+Hebridean,PERSON,1,100.0%
 The Ministry of Magic,ORG,1,100.0%
-an hour later,TIME,1,100.0%
-s'ppose,ORG,1,100.0%
-s'pose,ORG,1,100.0%
-Dragon Breeding,ORG,1,100.0%
+a warm day,DATE,1,100.0%
+s'ppose yeh've,ORG,1,100.0%
+Dragon Breeding for Pleasure,ORG,1,100.0%
 every half hour,TIME,1,100.0%
 Norwegian,NORP,3,100.0%
-Ridgeback,NORP,1,33.3%
-Ridgeback,PERSON,2,66.7%
+Ridgeback,GPE,3,100.0%
 only a few feet,QUANTITY,1,100.0%
+Ridgebacks,GPE,1,100.0%
 the next week,DATE,1,100.0%
 just a week,DATE,1,100.0%
 Norbert,PERSON,26,100.0%
-The following week,DATE,1,100.0%
-Wednesday,DATE,1,100.0%
-a week,DATE,2,100.0%
 the last week,DATE,1,100.0%
-the afternoon,TIME,1,100.0%
 the end of the day,DATE,1,100.0%
-Midnight on Saturday,WORK_OF_ART,1,100.0%
-Midnight,ORG,1,100.0%
+Aargh,WORK_OF_ART,1,100.0%
 ten feet,QUANTITY,1,100.0%
-the middle of the night,TIME,1,100.0%
-"About ten minutes later,",TIME,1,100.0%
+About ten minutes later,TIME,1,100.0%
 FIFTEEN,CARDINAL,1,100.0%
-Professor McGonagall's,PERSON,2,100.0%
-earth,LOC,1,100.0%
-one o'clock,TIME,1,100.0%
-the morning,TIME,1,100.0%
+one o'clock in the morning,TIME,1,100.0%
 Four,CARDINAL,1,100.0%
 one night,TIME,2,100.0%
-Miss Granger,PERSON,3,100.0%
-Fifty,CARDINAL,2,100.0%
+Fifty,ORG,1,50.0%
+Fifty,CARDINAL,1,50.0%
 A hundred and fifty,CARDINAL,1,100.0%
-a hundred and fifty,CARDINAL,1,100.0%
+a hundred and fifty,CARDINAL,2,100.0%
 fewer than yesterday,DATE,1,100.0%
 a few weeks,DATE,1,100.0%
-a hundred and fifty points,QUANTITY,1,100.0%
-good'll,PERSON,1,100.0%
 about a week,DATE,1,100.0%
-Sorcerer's Stones,WORK_OF_ART,1,100.0%
+Next second,DATE,1,100.0%
 Astronomy,ORG,1,100.0%
-Anti-Dark Force,WORK_OF_ART,1,100.0%
+Anti-Dark Force,ORG,1,100.0%
 Dumbledore'll,ORG,1,100.0%
 Jupiter,LOC,1,100.0%
 eleven o'clock tonight,TIME,1,100.0%
+eleven o'clock that night,TIME,1,100.0%
 a few days,DATE,1,100.0%
+Abou,PERSON,1,100.0%
 fer half an hour,TIME,1,100.0%
+dawn,TIME,1,100.0%
 Copyin,PERSON,1,100.0%
-Yeh'll,PERSON,1,50.0%
-Yeh'll,LOC,1,50.0%
+Yeh'll,GPE,2,100.0%
 last Wednesday,DATE,1,100.0%
 Draco,PERSON,1,100.0%
 Fang'll,PERSON,1,100.0%
-Ronan,PERSON,20,100.0%
-Mars,LOC,3,100.0%
+Ronan,PERSON,19,100.0%
 ages past,DATE,1,100.0%
-Anythin,ORG,1,100.0%
-Bane,ORG,7,46.7%
-Bane,PERSON,8,53.3%
+Bane,PERSON,12,85.7%
+Bane,ORG,2,14.3%
 nearly half an hour,TIME,1,100.0%
-AAAAAAAAAARGH,ORG,1,100.0%
-Firenze,GPE,17,100.0%
+Ronan or Bane,PERSON,1,100.0%
+Firenze,PERSON,1,25.0%
+Firenze,GPE,3,75.0%
 Centaurs,ORG,1,100.0%
 Only one,CARDINAL,1,100.0%
-The Sorcerer's Stone,WORK_OF_ART,1,100.0%
 many years,DATE,2,100.0%
 Bane'll,PERSON,1,100.0%
-CHAPTER SIXTEEN,LAW,1,100.0%
-TRAPDOOR,ORG,1,100.0%
+SIXTEEN,CARDINAL,1,100.0%
 AntiCheating,ORG,1,100.0%
 One hour,TIME,1,100.0%
-week,DATE,1,100.0%
-1637,CARDINAL,1,100.0%
-Elfric the Eager,ORG,1,100.0%
-Hog,ORG,1,100.0%
+Conduct,ORG,1,100.0%
+Elfric,ORG,1,100.0%
+Quidditch for England,ORG,1,100.0%
+Hog,PERSON,1,100.0%
 Mighta bin,PERSON,1,100.0%
 Mighta,PERSON,1,100.0%
-d'yeh,ORG,1,100.0%
-See Professor Dumbledore,WORK_OF_ART,1,100.0%
+Fluffy,ORG,2,100.0%
 ten minutes ago,TIME,1,100.0%
 the Ministry of Magic,ORG,2,100.0%
-"the Ministry of Magic, Potter",ORG,1,100.0%
-Whatever Professor McGonagall,WORK_OF_ART,1,100.0%
-"""Potter, I know what I'm talking about,""",WORK_OF_ART,1,100.0%
+"""Potter, I know what I'm talking about",WORK_OF_ART,1,100.0%
 a day,DATE,1,100.0%
 Good day,DATE,1,100.0%
 fourteen,CARDINAL,1,100.0%
 a hundred and twelve,CARDINAL,1,100.0%
-Petrificus,PERSON,1,100.0%
-Baron,PERSON,1,50.0%
-Baron,ORG,1,50.0%
-Peevsie,PERSON,1,100.0%
+Petrificus Totalus,PERSON,1,100.0%
+about a foot,QUANTITY,1,100.0%
+Baron,PERSON,1,100.0%
+Peevsie,GPE,1,100.0%
 A few seconds later,TIME,1,100.0%
 the few seconds',TIME,1,100.0%
-GONE MAD,PERSON,1,100.0%
+the fall,DATE,1,100.0%
+Devil,PERSON,3,100.0%
+Devil's Snare,WORK_OF_ART,1,100.0%
 WITCH,ORG,1,100.0%
+Winged,PERSON,1,100.0%
 a century,DATE,1,100.0%
 a minute's,TIME,1,100.0%
-90,CARDINAL,1,100.0%
+NOW,ORG,1,100.0%
+90,QUANTITY,1,100.0%
 Second,ORDINAL,2,100.0%
 Third,ORDINAL,2,100.0%
 Fourth,ORDINAL,1,100.0%
+Seven,CARDINAL,1,100.0%
 SEVENTEEN,CARDINAL,1,100.0%
 Another few seconds,TIME,1,100.0%
+All Harry,WORK_OF_ART,1,100.0%
 a few days ago,DATE,1,100.0%
-"""Potter, come back here!",WORK_OF_ART,1,100.0%
-"""Master, you are not strong enough!",WORK_OF_ART,1,100.0%
-Devil,PERSON,1,100.0%
-Snare,PRODUCT,1,100.0%
+Diagon Alley -how,ORG,1,100.0%
+a moment later,TIME,1,100.0%
+"""Potter",WORK_OF_ART,1,100.0%
+"""Master",WORK_OF_ART,1,100.0%
 these past weeks,DATE,1,100.0%
 AAAARGH,WORK_OF_ART,1,100.0%
-Misters Fred,PRODUCT,1,100.0%
+Misters Fred,PERSON,1,100.0%
 Three days,DATE,1,100.0%
 Nicolas,PERSON,3,100.0%
 Elixir,ORG,1,100.0%
+"Call him Voldemort, Harry",WORK_OF_ART,1,100.0%
 one day,DATE,1,100.0%
-"""Fire away",WORK_OF_ART,1,100.0%
 Elixir of Life,ORG,1,100.0%
 Just five minutes,TIME,1,100.0%
 food'll,PERSON,1,100.0%
 nearly fifteen minutes,TIME,1,100.0%
 a good night's,TIME,1,100.0%
 VOLDEMORT,PERSON,1,100.0%
-that night,TIME,1,100.0%
+a Chocolate Frog,PRODUCT,1,100.0%
+the day off,DATE,1,100.0%
+last checkup,DATE,1,100.0%
 the seventh year in a row,DATE,1,100.0%
 Another year,DATE,1,100.0%
-a year,DATE,1,100.0%
+the whole summer ahead,DATE,1,100.0%
 next year,DATE,1,100.0%
 three hundred and twelve,CARDINAL,1,100.0%
 three hundred and fifty-two,CARDINAL,1,100.0%
-four hundred,CARDINAL,2,100.0%
-twenty-six,CARDINAL,1,100.0%
-a hundred,CARDINAL,1,100.0%
-four hundred and,QUANTITY,1,100.0%
-seventy-two,CARDINAL,1,100.0%
-the Body-Bind Curse,PRODUCT,1,100.0%
+four hundred and twenty-six,CARDINAL,1,100.0%
+four hundred,CARDINAL,1,100.0%
+last-minute,TIME,1,100.0%
+McGonagall's,ORG,1,100.0%
+hundred,CARDINAL,1,100.0%
+four hundred and seventy-two,CARDINAL,1,100.0%
+just one,CARDINAL,1,100.0%
+the Body-Bind Curse,ORG,1,100.0%
 normal next year,DATE,1,100.0%
-the Hogwarts Express,ORG,1,100.0%
-King's Cross Station,ORG,1,100.0%
+Cross Station,FAC,1,100.0%
 Ginny Weasley,PERSON,1,100.0%
+Busy year,DATE,1,100.0%
 the summer,DATE,1,100.0%
-a good holiday,DATE,1,100.0%
