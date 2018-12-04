@@ -1,0 +1,18 @@
+strict digraph  {
+LAW [weight=1, xlabel=1];
+"head g1 head of prep phrase" [weight=1, lp="-1.0986122886681098"];
+"headleaf stepped" [weight=2, lp="0.0"];
+"child g1 determiner" [weight=1, lp="-1.0986122886681098"];
+"childleaf the" [weight=1, lp="0.0"];
+"child g1 compound" [weight=1, lp="-1.0986122886681098"];
+"childleaf Oslo" [weight=1, lp="0.0"];
+"head g2 ROOT" [weight=1, lp="0.0"];
+LAW -> "head g1 head of prep phrase"  [label=head];
+LAW -> "child g1 determiner"  [label=child];
+LAW -> "child g1 compound"  [label=child];
+"head g1 head of prep phrase" -> "headleaf stepped";
+"headleaf stepped" -> "head g2 ROOT"  [label=head];
+"child g1 determiner" -> "childleaf the";
+"child g1 compound" -> "childleaf Oslo";
+"head g2 ROOT" -> "headleaf stepped";
+}

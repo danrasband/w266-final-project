@@ -1,0 +1,15 @@
+strict digraph  {
+QUANTITY [weight=1, xlabel=1];
+"head g1 noun phrase as adverbial modifier" [weight=1, lp="-0.6931471805599453"];
+"headleaf from" [weight=1, lp="0.0"];
+"child g1 nummod" [weight=1, lp="-0.6931471805599453"];
+"childleaf 5,000" [weight=1, lp="0.0"];
+"head g2 prepositional modifier" [weight=1, lp="0.0"];
+"headleaf be" [weight=1, lp="0.0"];
+QUANTITY -> "head g1 noun phrase as adverbial modifier"  [label=head];
+QUANTITY -> "child g1 nummod"  [label=child];
+"head g1 noun phrase as adverbial modifier" -> "headleaf from";
+"headleaf from" -> "head g2 prepositional modifier"  [label=head];
+"child g1 nummod" -> "childleaf 5,000";
+"head g2 prepositional modifier" -> "headleaf be";
+}
