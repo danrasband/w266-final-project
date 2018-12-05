@@ -1,0 +1,10 @@
+strict digraph  {
+Vietnam;
+"head head of prep phrase";
+go;
+"head ROOT";
+Vietnam -> "head head of prep phrase"  [label=head];
+"head head of prep phrase" -> go;
+go -> "head ROOT"  [label=head];
+"head ROOT" -> go;
+}

@@ -1,0 +1,10 @@
+strict digraph  {
+Thursday;
+"head noun phrase as adverbial modifier";
+go;
+"head ROOT";
+Thursday -> "head noun phrase as adverbial modifier"  [label=head];
+"head noun phrase as adverbial modifier" -> go;
+go -> "head ROOT"  [label=head];
+"head ROOT" -> go;
+}

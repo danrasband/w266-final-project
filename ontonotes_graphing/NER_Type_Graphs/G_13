@@ -1,0 +1,15 @@
+strict digraph  {
+1975;
+"head head of prep phrase";
+ended;
+"head adverbial clause modifier";
+visit;
+"head open clausal complement";
+"t*-1";
+1975 -> "head head of prep phrase"  [label=head];
+"head head of prep phrase" -> ended;
+ended -> "head adverbial clause modifier"  [label=head];
+"head adverbial clause modifier" -> visit;
+visit -> "head open clausal complement"  [label=head];
+"head open clausal complement" -> "t*-1";
+}

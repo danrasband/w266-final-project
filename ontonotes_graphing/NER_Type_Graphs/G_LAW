@@ -1,7 +1,0 @@
-strict graph  {
-LAW;
-"head of prep phrase";
-stepped;
-LAW -- "head of prep phrase";
-"head of prep phrase" -- stepped;
-}
