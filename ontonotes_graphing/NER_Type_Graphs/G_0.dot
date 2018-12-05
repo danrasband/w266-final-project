@@ -1,0 +1,17 @@
+strict digraph  {
+"President Clinton";
+"head g1 nominal subject";
+is;
+"child g1 nsubj";
+President;
+go;
+be;
+"Mr.";
+"President Clinton" -> "head g1 nominal subject"  [label=head];
+"President Clinton" -> "child g1 nsubj"  [label=child];
+"head g1 nominal subject" -> is;
+"head g1 nominal subject" -> go;
+"head g1 nominal subject" -> be;
+"child g1 nsubj" -> President;
+"child g1 nsubj" -> "Mr.";
+}

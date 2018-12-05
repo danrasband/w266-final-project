@@ -1,0 +1,11 @@
+strict digraph  {
+"U.S.";
+"head g1 compound";
+President;
+"head g2 attribute";
+be;
+"U.S." -> "head g1 compound"  [label=head];
+"head g1 compound" -> President;
+President -> "head g2 attribute"  [label=head];
+"head g2 attribute" -> be;
+}

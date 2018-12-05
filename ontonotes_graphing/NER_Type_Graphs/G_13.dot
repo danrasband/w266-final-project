@@ -1,0 +1,11 @@
+strict digraph  {
+1975;
+"head g1 head of prep phrase";
+ended;
+"head g2 adverbial clause modifier";
+visit;
+1975 -> "head g1 head of prep phrase"  [label=head];
+"head g1 head of prep phrase" -> ended;
+ended -> "head g2 adverbial clause modifier"  [label=head];
+"head g2 adverbial clause modifier" -> visit;
+}

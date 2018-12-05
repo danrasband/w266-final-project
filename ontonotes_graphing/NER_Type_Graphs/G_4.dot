@@ -1,0 +1,7 @@
+strict digraph  {
+first;
+"head g1 adverbial modifier";
+go;
+first -> "head g1 adverbial modifier"  [label=head];
+"head g1 adverbial modifier" -> go;
+}

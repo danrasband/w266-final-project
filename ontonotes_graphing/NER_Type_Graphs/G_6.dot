@@ -1,0 +1,7 @@
+strict digraph  {
+Vietnam;
+"head g1 head of prep phrase";
+go;
+Vietnam -> "head g1 head of prep phrase"  [label=head];
+"head g1 head of prep phrase" -> go;
+}

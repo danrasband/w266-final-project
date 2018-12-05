@@ -1,0 +1,19 @@
+strict digraph  {
+"the Vietnam War";
+"head g1 nominal subject";
+ended;
+"child g1 determiner";
+the;
+"child g1 nsubj";
+Vietnam;
+"head g2 adverbial clause modifier";
+visit;
+"the Vietnam War" -> "head g1 nominal subject"  [label=head];
+"the Vietnam War" -> "child g1 determiner"  [label=child];
+"the Vietnam War" -> "child g1 nsubj"  [label=child];
+"head g1 nominal subject" -> ended;
+ended -> "head g2 adverbial clause modifier"  [label=head];
+"child g1 determiner" -> the;
+"child g1 nsubj" -> Vietnam;
+"head g2 adverbial clause modifier" -> visit;
+}

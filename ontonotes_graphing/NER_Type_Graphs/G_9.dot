@@ -1,0 +1,11 @@
+strict digraph  {
+first;
+"head g1 adjectival modifier";
+President;
+"head g2 attribute";
+be;
+first -> "head g1 adjectival modifier"  [label=head];
+"head g1 adjectival modifier" -> President;
+President -> "head g2 attribute"  [label=head];
+"head g2 attribute" -> be;
+}

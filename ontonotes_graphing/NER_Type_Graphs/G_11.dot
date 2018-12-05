@@ -1,0 +1,7 @@
+strict digraph  {
+0;
+"head g1 punctuation";
+be;
+0 -> "head g1 punctuation"  [label=head];
+"head g1 punctuation" -> be;
+}
