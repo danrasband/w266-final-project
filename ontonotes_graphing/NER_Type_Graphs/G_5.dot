@@ -1,0 +1,15 @@
+strict digraph  {
+"Asia - Pacific";
+"head g1 compound";
+nations;
+"child g1 compound";
+Asia;
+"head g2 head of prep phrase";
+meeting;
+"Asia - Pacific" -> "head g1 compound"  [label=head];
+"Asia - Pacific" -> "child g1 compound"  [label=child];
+"head g1 compound" -> nations;
+nations -> "head g2 head of prep phrase"  [label=head];
+"child g1 compound" -> Asia;
+"head g2 head of prep phrase" -> meeting;
+}

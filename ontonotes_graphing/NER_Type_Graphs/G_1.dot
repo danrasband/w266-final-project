@@ -1,0 +1,19 @@
+strict digraph  {
+Brunei;
+"head g1 head of prep phrase";
+go;
+"head g1 direct object";
+visit;
+"child g1 determiner";
+the;
+"head g2 open clausal complement";
+"t*-1";
+Brunei -> "head g1 head of prep phrase"  [label=head];
+Brunei -> "head g1 direct object"  [label=head];
+Brunei -> "child g1 determiner"  [label=child];
+"head g1 head of prep phrase" -> go;
+"head g1 direct object" -> visit;
+visit -> "head g2 open clausal complement"  [label=head];
+"child g1 determiner" -> the;
+"head g2 open clausal complement" -> "t*-1";
+}

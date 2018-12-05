@@ -1,0 +1,11 @@
+strict digraph  {
+Asia;
+"head g1 head of prep phrase";
+off;
+"head g2 prepositional modifier";
+is;
+Asia -> "head g1 head of prep phrase"  [label=head];
+"head g1 head of prep phrase" -> off;
+off -> "head g2 prepositional modifier"  [label=head];
+"head g2 prepositional modifier" -> is;
+}
