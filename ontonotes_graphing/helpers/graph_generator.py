@@ -9,7 +9,7 @@ def generate_graph(entities, sentences, number_of_generations=2):
     '''Takes a DataFrame of entities and converts them into a weighted, 
     directed graph of types, relations, children, etc.'''
     graphs_dict = dict()
-    for entity_id, entity in entities.iterrows():
+    for entity_id, entity in tqdm(entities.iterrows(), total=len(entities)):
         graph_row(graphs_dict, entity, sentences, number_of_generations)
     return graphs_dict
 
@@ -31,7 +31,7 @@ def graph_row(graphs_dict, entity, sentences, number_of_generations=2):
     # and get that Token from the spaCy parse:
     
     spacy_parsed = sentences.loc[entity.sentence_id]['spacy_parsed']
-    head_index = int(entity['end_index'])
+    head_index = int(entity['end_word_index'])
     head_of_phrase = spacy_parsed[head_index]
     
     nodes_needing_head_branches = [(head_of_phrase, root_node)]
@@ -53,18 +53,21 @@ def graph_row(graphs_dict, entity, sentences, number_of_generations=2):
                     relation = node.dep_
 
                 # Trying to catch and diagnose some problem cases
-                elif relation == 'punctuation':
-                    print('NE \'{1}\' marked as punctuation in sentence \'{0}\''.format(str(spacy_parsed), entity['string']))
-                    print(' --- ')
-                elif relation == 'determiner':
-                    print('NE \'{1}\' marked as determiner in sentence \'{0}\''.format(str(spacy_parsed), entity['string']))
-                    print(' --- ')
+#                 elif relation == 'punctuation':
+#                     print('NE \'{1}\' marked as punctuation in sentence \'{0}\''.format(str(spacy_parsed), entity['string']))
+#                     print(' --- ')
+#                 elif relation == 'determiner':
+#                     print('NE \'{1}\' marked as determiner in sentence \'{0}\''.format(str(spacy_parsed), entity['string']))
+#                     print(' --- ')
 
                 # Object of preposition doesn't do much, so let's see what's on the other side of that.
                 elif relation == 'object of preposition':
                     relation = 'head of prep phrase'
                     # move to the preposition so we get its head later on when adding node
                     node = node.head
+                
+                if relation == 'ROOT':
+                    continue
                 
                 # differentiating head-focused edges from child-focused edges
                 intermediary_node_label = 'head g{0} {1}'.format(current_gen, relation)
@@ -90,7 +93,7 @@ def graph_row(graphs_dict, entity, sentences, number_of_generations=2):
                     next_head_nodes.append((node.head, norm))
                 
             except:
-                print('passed in head')
+                # print('passed in head')
                 pass
             
             # Move the next round into the queue and clear it
@@ -108,7 +111,7 @@ def graph_row(graphs_dict, entity, sentences, number_of_generations=2):
                         relation = child.dep_
 
                     if relation == 'punctuation':
-                        break
+                        continue
 
                     # Differentiate these relations from head relations
                     # and add the node and its weights
@@ -140,3 +143,6 @@ def graph_row(graphs_dict, entity, sentences, number_of_generations=2):
         current_gen += 1
 
     graphs_dict[root_node] = G
+    
+def tree_to_dependency_graph():
+    pass
