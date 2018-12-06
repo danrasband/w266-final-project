@@ -48,11 +48,13 @@ def get_entity_ids():
         entity_ids = pickle.load(file)
     return entity_ids
 
+def get_entities():
+    return pd.read_csv(_data_path('name_entity.csv'))
+
 def get_labeled_data():
-    entities = pd.read_csv(_data_path('name_entity.csv'))
-    entities['entity_id'] = [entity_id_from_row(row) for _, row in entities.iterrows()]
-    entities['sentence_id'] = [sentence_id_from_row(row) for _, row in entities.iterrows()]
-    return entities.set_index('entity_id')
+    with open(_data_path('Y_true.pkl'), 'rb') as file:
+        entities = pickle.load(file)
+    return entities
 
 def get_sentences():
     sentences = pd.read_csv(_data_path('sentence.csv'))

@@ -2,6 +2,9 @@
 import spacy
 import networkx as nx
 
+# Math
+import numpy as np
+
 # Utils
 from tqdm import tqdm
 
@@ -11,7 +14,8 @@ def generate_graph(entities, sentences, number_of_generations=2):
     graphs_dict = dict()
     for entity_id, entity in tqdm(entities.iterrows(), total=len(entities)):
         graph_row(graphs_dict, entity, sentences, number_of_generations)
-    return graphs_dict
+    log_graphs_dict = {key:calc_lps(value) for (key, value) in tqdm(graphs_dict.items())}
+    return log_graphs_dict
 
 def graph_row(graphs_dict, entity, sentences, number_of_generations=2):
     '''Takes a Series (a single row of a DataFrame) and adds its entity information 
@@ -143,6 +147,17 @@ def graph_row(graphs_dict, entity, sentences, number_of_generations=2):
         current_gen += 1
 
     graphs_dict[root_node] = G
+
+def normalize_as_logp(successor_nodes, G):
+    log_total = np.log(sum([G.node[node]['weight'] for node in successor_nodes]))
+    for n in successor_nodes:
+        G.node[n]['lp'] = np.log(G.node[n]['weight']) - log_total
+
+def calc_lps(G):
+    for node in nx.nodes(G):
+        if G.successors(node):
+            [normalize_as_logp(succ[1], G) for succ in nx.bfs_successors(G, node)]
+    return G
     
 def tree_to_dependency_graph():
     pass
