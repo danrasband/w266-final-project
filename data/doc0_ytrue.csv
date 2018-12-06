@@ -1,0 +1,281 @@
+entity_id,document_id,type,sentence_index,start_word_index,end_word_index,string
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1:4,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,0,1,4,the summer of 2005
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:23:24,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,0,23,24,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:41:42,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,1,14,15,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:54:54,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORDINAL,2,3,3,fifth
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:55:55,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,2,4,4,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:70:70,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,3,5,5,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:82:83,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,4,3,4,several years
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:108:109,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,4,29,30,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:122:124,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,5,8,10,Hong Kong Disneyland
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:133:135,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,6,7,9,two years ago
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:138:138,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,6,12,12,2003
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:129:131,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,6,3,5,Hong Kong Disneyland
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:141:144,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,7,1,4,January of that year
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:175:176,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,7,35,36,recent years
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:147:148,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,7,7,8,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:163:164,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,7,23,24,Lantau Island
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:155:156,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,QUANTITY,7,15,16,200 hectares
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:153:154,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,7,13,14,Disney Corporation
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:178:178,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,8,0,0,One
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:191:192,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,9,11,12,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:198:199,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,10,4,5,Lantau Island
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:201:204,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,10,7,10,Hong Kong International Airport
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:233:233,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORDINAL,11,12,12,first
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:229:229,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,NORP,11,8,8,Chinese
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:244:245,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,12,3,4,one month
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:255:256,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,12,14,15,September 12
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:251:253,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,12,10,12,Hong Kong Disneyland
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:261:261,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,13,3,3,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:293:293,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORDINAL,14,26,26,first
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:278:278,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,14,11,11,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:307:309,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,15,11,13,the same day
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:299:299,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,15,3,3,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:315:316,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,16,1,2,two years
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:318:318,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,16,4,4,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:348:348,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,18,13,13,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:366:366,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,19,6,6,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:387:387,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,19,27,27,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:487:488,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,26,1,2,Disney Corporation
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:497:497,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,NORP,26,11,11,Chinese
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:498:498,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,26,12,12,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:490:491,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,26,4,5,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:511:511,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,26,25,25,China
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:524:525,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,27,9,10,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:539:540,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,27,24,25,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:519:522,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LAW,27,4,7,the Individual Visit Scheme
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:560:561,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,28,18,19,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:549:552,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,28,7,10,more than seven million
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:583:585,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,30,7,9,about two years
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:593:593,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,31,6,6,34
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:607:610,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,32,8,11,one hundred years ago
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:613:613,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,32,14,14,today
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:599:600,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,32,0,1,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:637:638,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,34,2,3,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:680:681,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,34,45,46,Mong Kok
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:694:696,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,35,11,13,the Repulse Bay
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:715:716,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,36,12,13,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:721:722,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,37,3,4,Victoria Peak
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:729:731,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,37,11,13,Victoria Harbor 's
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:741:743,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,38,6,8,over a century
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:767:768,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,39,4,5,Victoria Harbor
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:781:782,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,40,3,4,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:807:808,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,41,19,20,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:815:818,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,42,1,4,the past 28 years
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:820:822,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,42,6,8,the Ocean Park
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:835:836,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,42,21,22,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:847:849,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,43,9,11,the Ocean Theater
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:886:888,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,44,21,23,Hong Kong Island
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:890:893,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,44,25,28,the South China Sea
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:903:905,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,45,8,10,the Ocean Park
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:917:918,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,45,22,23,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:926:926,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,46,3,3,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:931:933,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,46,8,10,the Ocean Park
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:940:940,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,46,17,17,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:928:929,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,46,5,6,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:969:969,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,47,20,20,2006
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:961:962,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,MONEY,47,12,13,5.5 billion
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1037:1038,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,51,19,20,several years
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1024:1026,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,51,6,8,the North Pole
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1028:1031,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,51,10,13,the Marine Life Center
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1057:1058,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,53,5,6,ten years
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1112:1113,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,57,5,6,next year
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1120:1121,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,59,3,4,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1124:1129,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,QUANTITY,59,7,12,one thousand - plus square kilometers
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1146:1147,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,62,4,5,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1159:1160,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,62,17,18,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1167:1170,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,63,3,6,the Avenue of Stars
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1173:1173,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,64,1,1,Hollywood
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1176:1176,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,64,4,4,East
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1208:1210,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,68,5,7,New World Travel
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1212:1213,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,69,0,1,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1220:1220,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,69,8,8,Hollywood
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1223:1223,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,69,11,11,East
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1226:1229,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,70,1,4,the past 100 years
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1234:1235,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,70,9,10,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1255:1256,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,71,6,7,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1261:1262,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,72,0,1,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1274:1275,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,72,13,14,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1284:1285,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,72,23,24,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1295:1295,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,73,5,5,2004
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1332:1334,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,73,42,44,100 - year
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1298:1300,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,73,8,10,the Waterfront Promenade
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1323:1326,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,73,33,36,the Avenue of Stars
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1316:1320,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,73,26,30,the Hong Kong Tourism Board
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1329:1331,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,73,39,41,Hong Kong 's
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1309:1311,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,73,19,21,Hong Kong Island
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1313:1314,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,73,23,24,Victoria Harbor
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1344:1346,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,74,6,8,Hong Kong 's
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1362:1363,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,75,0,1,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1383:1386,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,77,2,5,the Avenue of Stars
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1399:1400,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,78,3,4,Victoria Harbor
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1437:1438,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,79,7,8,Victoria Harbor
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1508:1513,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,83,0,5,The PLA Hong Kong Garrison Plaza
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1515:1518,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,83,7,10,Bank of China Tower
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1526:1528,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,83,18,20,HSBC Main Building
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1521:1521,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,TIME,83,13,13,8:00
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1537:1542,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,85,0,5,Center of the East Central .
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1548:1550,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,86,5,7,Hong Kong Island
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1543:1543,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,86,0,0,Ten
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1553:1553,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,86,10,10,one
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1555:1555,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,86,12,12,one
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1673:1674,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,93,13,14,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1683:1684,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,93,23,24,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1696:1699,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,94,0,3,Hong Kong Wetland Park
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1717:1719,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,94,21,23,Hong Kong SAR
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1724:1725,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,94,28,29,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1742:1743,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,95,13,14,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1757:1760,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,96,0,3,Hong Kong Wetland Park
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1765:1766,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,QUANTITY,96,8,9,61 hectares
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1770:1772,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,QUANTITY,96,13,15,"10,000 square meter"
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1778:1779,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,QUANTITY,96,21,22,60 hectare
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1838:1838,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,99,17,17,two
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1869:1870,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,101,5,6,Wetland Park
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1889:1893,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,105,2,6,the Wetland Park Exploration Center
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1902:1902,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,106,7,7,Putian
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1904:1904,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,106,9,9,Shenzhen
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1916:1917,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,107,10,11,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1921:1921,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,107,15,15,Shenzhen
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:1990:1991,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,112,11,12,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2066:2068,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,123,0,2,Mai Po Marshes
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2079:2079,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,123,13,13,Asia
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2071:2072,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,123,5,6,Wetland Park
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2090:2092,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,124,9,11,Hong Kong 's
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2085:2085,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,124,4,4,"50,000"
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2114:2117,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,125,12,15,Hong Kong Wetland Park
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2106:2106,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,125,4,4,three
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2162:2162,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,130,6,6,"1,500"
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2185:2186,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,132,16,17,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2177:2180,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,132,8,11,two to three hundred
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2201:2204,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,133,9,12,Hong Kong Wetland Park
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2234:2235,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,137,0,1,Wetland Park
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2255:2258,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,138,9,12,the beginning of 2006
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2267:2267,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,138,21,21,2006
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2268:2271,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,EVENT,138,22,25,Discover Hong Kong Year
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2279:2281,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,139,5,7,the year 2006
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2303:2306,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,141,11,14,September of this year
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2299:2299,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,141,7,7,Disneyland
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2314:2316,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,142,6,8,Ngong Ping 360
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2328:2330,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,WORK_OF_ART,142,20,22,the Giant Buddha
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2341:2344,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,143,9,12,the Avenue of Stars
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2362:2364,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,145,0,2,Hong Kong 's
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2377:2379,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,EVENT,146,6,8,Symphony of Lights
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2398:2398,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,147,17,17,2006
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2399:2402,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,EVENT,147,18,21,Discover Hong Kong Year
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2423:2426,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,149,7,10,more than twenty years
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2439:2439,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,150,6,6,two
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2442:2443,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,151,1,2,recent years
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2445:2447,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,151,4,6,Hong Kong 's
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2458:2458,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,151,17,17,Kowloon
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2460:2462,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,151,19,21,the New Territory
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2454:2456,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,151,13,15,Hong Kong Island
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2474:2474,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,152,10,10,2006
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2482:2483,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,152,18,19,Lantau Island
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2464:2464,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,152,0,0,Two
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2468:2468,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,152,4,4,four
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2475:2478,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,EVENT,152,11,14,Discover Hong Kong Year
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2485:2487,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,152,21,23,the New Territory
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2493:2494,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,153,4,5,Lantau Island
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2499:2500,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,153,10,11,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2518:2518,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,WORK_OF_ART,154,13,13,Buddha
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2542:2542,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,WORK_OF_ART,155,22,22,Buddhas
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2521:2521,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,NORP,155,1,1,Chinese
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2522:2522,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,NORP,155,2,2,Buddhism
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2526:2526,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,155,6,6,five
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2541:2541,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,155,21,21,five
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2546:2548,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,156,2,4,Hong Kong 's
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2559:2559,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,156,15,15,China
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2605:2605,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,156,61,61,China
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2549:2552,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,WORK_OF_ART,156,5,8,Tian Tan Giant Buddha
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2563:2565,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,WORK_OF_ART,156,19,21,Lingshan Giant Buddha
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2570:2572,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,WORK_OF_ART,156,26,28,Leshan Giant Buddha
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2577:2579,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,WORK_OF_ART,156,33,35,Yungang Giant Buddha
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2585:2587,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,WORK_OF_ART,156,41,43,Longmen Giant Buddha
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2597:2597,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,WORK_OF_ART,156,53,53,Buddhas
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2602:2602,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,156,58,58,five
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2589:2591,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,156,45,47,the Central Plains
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2651:2652,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,159,7,8,Lantau Island
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2648:2648,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,WORK_OF_ART,159,4,4,Buddha
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2662:2664,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,159,18,20,Chek Lap Kok
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2657:2660,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,159,13,16,Hong Kong International Airport
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2666:2666,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,159,22,22,Disneyland
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2679:2680,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,LOC,160,4,5,Lantau Island
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2709:2710,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,162,14,15,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2712:2712,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,162,17,17,Zhuhai
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2715:2715,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,162,20,20,Macao
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2718:2718,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,163,1,1,1992
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2732:2732,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,165,6,6,Macao
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2735:2736,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,165,9,10,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2739:2739,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,165,13,13,two
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2771:2771,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,167,6,6,Shenzhen
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2773:2773,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,167,8,8,Dongguan
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2778:2778,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,167,13,13,Panyu
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2785:2785,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,167,20,20,Zhongshan
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2791:2791,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,167,26,26,Zhuhai
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2796:2796,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,167,31,31,Zhuhai
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2800:2800,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,167,35,35,Macao
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2804:2805,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,168,2,3,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2819:2823,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,169,0,4,A full twenty years ago
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2825:2827,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,169,6,8,Hopewell Holdings Group
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2829:2832,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,PERSON,169,10,13,Wu Ying - sheung
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2860:2864,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,QUANTITY,170,12,16,a little over one kilometer
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2886:2886,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,172,7,7,1999
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2890:2891,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,173,2,3,20 years
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2916:2916,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,175,6,6,Zhuhai
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2925:2925,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,175,15,15,three
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2928:2929,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,175,18,19,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2931:2931,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,175,21,21,Macao
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2934:2934,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,175,24,24,Zhuhai
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2960:2960,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,176,0,0,Macao
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2966:2966,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,176,6,6,Zhuhai
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2976:2977,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,177,5,6,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2979:2979,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,177,8,8,Macao
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2982:2982,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,177,11,11,Zhuhai
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2994:2994,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,178,3,3,Zhuhai
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:2999:2999,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,178,8,8,Macao
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3013:3014,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,178,22,23,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3006:3006,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,178,15,15,Disneyland
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3039:3039,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,180,14,14,China
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3074:3074,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,181,2,2,Zhuhai
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3079:3079,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,181,7,7,Macao
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3098:3098,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,181,26,26,Macao
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3105:3107,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,TIME,181,33,35,an hour later
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3103:3103,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,181,31,31,Disneyland
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3111:3113,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,182,2,4,Hong Kong Disneyland
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3159:3160,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,184,12,13,September 12
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3155:3155,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,184,8,8,Disney
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3215:3215,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,187,37,37,September
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3230:3230,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,FAC,188,13,13,Disneyland
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3246:3247,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,189,6,7,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3240:3242,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,EVENT,189,0,2,The Wonder Tour
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3288:3289,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,193,0,1,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3302:3303,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,194,5,6,Hong Kong
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3362:3363,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,198,16,17,Across China
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3352:3357,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,WORK_OF_ART,198,6,11,Hong Kong : a Shopping Paradise
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3372:3373,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,200,3,4,Cross Strait
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3376:3378,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,200,7,9,CCTV International Channel
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3385:3385,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORDINAL,202,0,0,First
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3394:3394,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,202,9,9,today
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3398:3401,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,PERSON,203,0,3,Wang Jin - pyng
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3412:3412,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,203,14,14,KMT
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3425:3425,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,204,9,9,Taiwan
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3434:3434,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,205,0,0,Taiwan
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3438:3440,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,EVENT,205,4,6,Taipei Aerospace Exhibition
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3452:3452,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,DATE,206,3,3,2005
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3473:3473,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,206,24,24,Yinchuan
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3453:3457,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,EVENT,206,4,8,Ningxia Investment and Trade Fair
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3459:3466,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,EVENT,206,10,17,Ningxia - Taiwan Economic and Trade Cooperation Seminar
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3495:3497,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,WORK_OF_ART,207,20,22,the Great Wall
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3479:3479,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,NORP,207,4,4,Taiwanese
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3475:3478,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,CARDINAL,207,0,3,More than three hundred
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3515:3515,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,GPE,208,8,8,Ningxia
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3528:3528,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,NORP,208,21,21,Taiwanese
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3536:3538,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,209,5,7,Hot Topic Analysis
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3545:3545,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,210,1,1,KMT
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3555:3555,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,210,11,11,KMT
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3560:3562,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,TIME,210,16,18,the afternoon of
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3557:3558,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,PERSON,210,13,14,Lien Chan
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3574:3577,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,PERSON,211,9,12,Wang Jin - pyng
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3587:3587,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,ORG,211,22,22,KMT
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3570:3572,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,TIME,211,5,7,over an hour
+bc/cctv/00/cctv_0000@0000@cctv@bc@en@on:3597:3598,bc/cctv/00/cctv_0000@0000@cctv@bc@en@on,PERSON,212,6,7,Lien Chan
