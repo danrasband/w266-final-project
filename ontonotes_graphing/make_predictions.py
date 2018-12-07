@@ -15,7 +15,7 @@ from collections import defaultdict
 import re
 
 NETS_PICKLE_FILEPATH = '../data/LP_NET_Graphs.pkl'
-OUTPUT_FILEPATH = '../data/Y_pred.csv'
+OUTPUT_FOLDER = '../data/'
 DOCUMENTS_CSV_FILEPATH = '../data/document.csv'
 
 nlp = en_coref_lg.load()
@@ -333,8 +333,8 @@ def make_predictions(first_doc, last_doc):
 
     checkpoint_1 = time.time()
 
-    DOC_MIN = 0 
-    DOC_MAX = 1
+    DOC_MIN = first_doc
+    DOC_MAX = last_doc
 
     # Build the graphs of candidates from the documents.
     Y_pred = list()
@@ -348,7 +348,7 @@ def make_predictions(first_doc, last_doc):
     print("That took: {0} seconds".format(round(time.time() - checkpoint_1, 4)))
 
     ypred_df = pd.DataFrame(Y_pred, columns = ['entity_id', 'prediction']).set_index('entity_id')
-    ypred_df.to_csv(OUTPUT_FILEPATH)
+    ypred_df.to_csv("{0}Y_pred_{1}_{2}.csv".format(OUTPUT_FOLDER,first_doc,last_doc)
 
 
 if __name__ == "__main__":
