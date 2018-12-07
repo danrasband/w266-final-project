@@ -203,14 +203,17 @@ def score_relation_and_children(nlp, cand_G, NET_G, cand_parent, net_options, ca
     if cand_parent not in cand_succ_dict:
         
         sim_scores = list()
-                
-        cand_token = nlp(cand_parent)[0]
+        cand_doc = nlp(cand_parent)
+        cand_doc[0].is_sent_start = True
+        cand_token = cand_doc[0]
         
         for net_opt in net_options:
             try:
                 sim_scores.append(sim_dict[cand_parent][net_opt])
             except:
-                score = cand_token.similarity(nlp(net_opt)[0])
+                net_doc = nlp(net_opt)
+                net_doc[0].is_sent_start = True
+                score = cand_token.similarity(net_doc[0])
                 sim_scores.append(score)
                 sim_dict[cand_parent][net_opt] = score
 
@@ -306,12 +309,12 @@ def predict_on_doc(doc_row, NETs_dict, nlp, Y_pred, sim_dict):
     
     cluster_dict = dict()
     
-    removed_pw = re.sub(r'%pw', 'unk_date', doc_row["document"])
+    removed_pw = re.sub(r'%pw', 'unk_date', doc_row[1])
     removed_hypenation = re.sub(r'([a-z])-([a-z])', '\1\2', removed_pw)
     unified_digits = re.sub(r'[0-9]','D',removed_hypenation)
     filtered_doc = unified_digits
     
-    ent_dict = graph_candidates_in_doc(doc_row["document_id"],filtered_doc)
+    ent_dict = graph_candidates_in_doc(doc_row[0],filtered_doc)
     
     for ent_id, (cand_root_node, cand_G, cluster_id) in ent_dict.items():
         try:
@@ -343,7 +346,7 @@ def make_predictions(first_doc, last_doc):
     # Loading a spaCy model but disabling parsers to speed up similarity measurements
     sim_nlp = spacy.load('en_core_web_lg', disable=['parser', 'tagger', 'ner', 'neuralcoref'])
 
-    documents.loc[DOC_MIN:DOC_MAX,:].apply(lambda x: predict_on_doc(x, lp_net_graphs, sim_nlp, Y_pred, sim_dict), axis=1)
+    documents.iloc[DOC_MIN:DOC_MAX+1,:].apply(lambda x: predict_on_doc(x, lp_net_graphs, sim_nlp, Y_pred, sim_dict), axis=1)
 
     print("That took: {0} seconds".format(round(time.time() - checkpoint_1, 4)))
 

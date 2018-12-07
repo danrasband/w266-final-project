@@ -198,21 +198,20 @@ def logsumexp(a):
     sumexp = np.sum(np.exp(a - a_max))
     return np.log(sumexp) + a_max
 
-def score_relation_and_children(nlp, cand_G, NET_G, cand_parent, net_options, cand_succ_dict, NET_succ_dict, sim_dict, parent_weight):
+def score_relation_and_children(sim_nlp, cand_G, NET_G, cand_parent, net_options, cand_succ_dict, NET_succ_dict, sim_dict): #, parent_weight):
 
     # If this node has no further children,
     # compare it to its NET options
     if cand_parent not in cand_succ_dict:
 
         sim_scores = list()
-
-        cand_token = nlp(cand_parent)[0]
-
+        cand_token = sim_nlp(cand_parent)[0]
+        
         for net_opt in net_options:
             try:
                 sim_scores.append(sim_dict[cand_parent][net_opt])
             except:
-                score = cand_token.similarity(nlp(net_opt)[0])
+                score = cand_token.similarity(sim_nlp(net_opt)[0])
                 sim_scores.append(score)
                 sim_dict[cand_parent][net_opt] = score
 
@@ -220,7 +219,7 @@ def score_relation_and_children(nlp, cand_G, NET_G, cand_parent, net_options, ca
         sim_idx = np.argmax(sim_scores)
 
         # Recover the float value of the winning word's weight
-        sim_weight = float(NET_G.node[net_options[sim_idx]]['weight'])
+        #sim_weight = float(NET_G.node[net_options[sim_idx]]['weight'])
 
         # Score the similarity times the square root of the word's frequency (weight)
         similarity_score = sim_scores[sim_idx] #* (sim_weight / parent_weight) #np.log(sim_scores[sim_idx]) #+ sim_lp
@@ -240,17 +239,17 @@ def score_relation_and_children(nlp, cand_G, NET_G, cand_parent, net_options, ca
             try:
                 # Get the options from the NET graph branching from this relation type
                 child_net_options = NET_succ_dict[relation]
-                relation_weight = float(NET_G.node[relation]['weight'])
-                print('relation weight:' + str(relation_weight))
+                #relation_weight = float(NET_G.node[relation]['weight'])
+                #print('relation weight:' + str(relation_weight))
 
                 # Iterate over the children of each relation
                 for cand_child in cand_succ_dict[relation]:
-                    score_from_this_node_to_leaves = score_relation_and_children(nlp, cand_G, NET_G, cand_child, child_net_options, cand_succ_dict, NET_succ_dict, sim_dict, relation_weight)
+                    score_from_this_node_to_leaves = score_relation_and_children(nlp, cand_G, NET_G, cand_child, child_net_options, cand_succ_dict, NET_succ_dict, sim_dict) #, relation_weight)
                     if score_from_this_node_to_leaves is not None:
                         accumulated_scores.append(score_from_this_node_to_leaves) # * (np.log(relation_weight) / np.log(parent_weight)))
 
             except Exception as ex:
-                pass
+                print(ex)
 
         # If we have more than an empty list
         if accumulated_scores != list():
@@ -269,7 +268,7 @@ def compare_candidate_to_NET(nlp, candidate_G, candidate_root, NET_G, net_root, 
     print("\n\nNET: {0}".format(net_root))
 
     # Run the results of runnign the recursive score_relation_and_children function on the initial roots
-    return score_relation_and_children(nlp, candidate_G, NET_G, candidate_root, [], cand_succ_dict, NET_succ_dict, sim_dict, NET_G.node[net_root]['weight'])
+    return score_relation_and_children(nlp, candidate_G, NET_G, candidate_root, [], cand_succ_dict, NET_succ_dict, sim_dict) #, NET_G.node[net_root]['weight'])
 
 
 # ### Lop through all the NETs and predict the Max
@@ -351,9 +350,11 @@ def make_predictions(first_doc, last_doc):
 
     # Loading a spaCy model but disabling parsers to speed up similarity measurements
     # sim_nlp = spacy.load('en_core_web_lg', disable=['parser', 'tagger', 'ner', 'neuralcoref'])
-    sim_nlp = en_coref_lg.load(disable=['parser', 'tagger', 'ner', 'neuralcoref'])
+    sim_nlp = spacy.load('en_core_web_lg', disable=['parser', 'tagger', 'ner'])
+    #sim_nlp.add_pipe(sim_nlp.create_pipe('sentencizer'))
 
     for _, document in documents.iloc[DOC_MIN:DOC_MAX + 1].iterrows():
+        print(document)
         predict_on_doc(document, lp_net_graphs, sim_nlp, Y_pred, sim_dict)
 
     print("That took: {} seconds".format(round(time.time() - checkpoint_1, 4)))
