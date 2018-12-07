@@ -348,7 +348,7 @@ def make_predictions(first_doc, last_doc):
     print("That took: {0} seconds".format(round(time.time() - checkpoint_1, 4)))
 
     ypred_df = pd.DataFrame(Y_pred, columns = ['entity_id', 'prediction']).set_index('entity_id')
-    ypred_df.to_csv("{0}Y_pred_{1}_{2}.csv".format(OUTPUT_FOLDER,first_doc,last_doc)
+    ypred_df.to_csv("{0}Y_pred_{1}_{2}.csv".format(OUTPUT_FOLDER,first_doc,last_doc))
 
 
 if __name__ == "__main__":
