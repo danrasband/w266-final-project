@@ -218,7 +218,7 @@ def score_relation_and_children(nlp, cand_G, NET_G, cand_parent, net_options, ca
         sim_idx = np.argmax(sim_scores)
                 
         # Recover the float value of the winning word's weight
-        sim_weight = float(NET_G.node[net_options[sim_idx]]['weight'])
+        #sim_weight = float(NET_G.node[net_options[sim_idx]]['weight'])
                 
         # Score the similarity times the square root of the word's frequency (weight)
         similarity_score = sim_scores[sim_idx] #* (sim_weight / parent_weight) #np.log(sim_scores[sim_idx]) #+ sim_lp
@@ -247,7 +247,7 @@ def score_relation_and_children(nlp, cand_G, NET_G, cand_parent, net_options, ca
                         accumulated_scores.append(score_from_this_node_to_leaves) # * (np.log(relation_weight) / np.log(parent_weight)))
                     
             except Exception as ex:
-                pass
+                print(ex)
         
         # If we have more than an empty list
         if accumulated_scores != list():
