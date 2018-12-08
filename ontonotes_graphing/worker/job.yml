@@ -1,0 +1,29 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  # Unique key of the Job instance
+  name: onto-predictions-00-99
+spec:
+  template:
+    metadata:
+      name: onto-predictions-00-99
+    spec:
+      containers:
+      - name: onto-predictions
+        image: gcr.io/w266-final-project-danrasband/make-predictions:latest
+        command:
+          - /root/anaconda3/bin/python
+          - make_predictions.py
+          - '0'
+          - '99'
+        env:
+        - name: AWS_ACCESS_KEY_ID
+          value: ''
+        - name: AWS_SECRET_ACCESS_KEY
+          value: ""
+        - name: AWS_DEFAULT_REGION
+          value: us-west-2
+        - name: AWS_BUCKET
+          value: w266
+      # Do not restart containers after they exit
+      restartPolicy: Never

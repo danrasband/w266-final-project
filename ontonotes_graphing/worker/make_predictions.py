@@ -1,4 +1,5 @@
 import boto3
+import botocore
 import spacy
 import en_coref_lg
 import pandas as pd
@@ -11,6 +12,9 @@ import re
 import dill as pickle
 from collections import defaultdict
 
+AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
+AWS_DEFAULT_REGION = os.getenv('AWS_DEFAULT_REGION')
 AWS_BUCKET = os.getenv('AWS_BUCKET')
 
 NETS_PICKLE_FILEPATH = './data/LP_NET_Graphs.20181205.pkl'
@@ -206,7 +210,7 @@ def score_relation_and_children(sim_nlp, cand_G, NET_G, cand_parent, net_options
 
         sim_scores = list()
         cand_token = sim_nlp(cand_parent)[0]
-        
+
         for net_opt in net_options:
             try:
                 sim_scores.append(sim_dict[cand_parent][net_opt])
@@ -345,7 +349,6 @@ def make_predictions(first_doc, last_doc):
     DOC_MAX = last_doc
 
     # Build the graphs of candidates from the documents.
-    Y_pred = list()
     sim_dict = defaultdict(lambda: dict())
 
     # Loading a spaCy model but disabling parsers to speed up similarity measurements
@@ -353,17 +356,23 @@ def make_predictions(first_doc, last_doc):
     sim_nlp = spacy.load('en_core_web_lg', disable=['parser', 'tagger', 'ner'])
     #sim_nlp.add_pipe(sim_nlp.create_pipe('sentencizer'))
 
-    for _, document in documents.iloc[DOC_MIN:DOC_MAX + 1].iterrows():
+    for i in range(DOC_MIN, DOC_MAX + 1):
+        filename = 'Y_pred_{}.csv'.format(i)
+        if exists_on_s3(filename): continue
+
+        document = documents.iloc[i]
         print(document)
+
+        Y_pred = list()
         predict_on_doc(document, lp_net_graphs, sim_nlp, Y_pred, sim_dict)
 
-    print("That took: {} seconds".format(round(time.time() - checkpoint_1, 4)))
+        ypred_df = pd.DataFrame(Y_pred, columns = ['entity_id', 'prediction']).set_index('entity_id')
+        csv_output_file_path = '{}/{}'.format(OUTPUT_FOLDER, filename)
+        ypred_df.to_csv(csv_output_file_path)
 
-    ypred_df = pd.DataFrame(Y_pred, columns = ['entity_id', 'prediction']).set_index('entity_id')
-    filename = 'Y_pred_{}_{}.csv'.format(first_doc, last_doc)
-    csv_output_file_path = '{}/{}'.format(OUTPUT_FOLDER, filename)
-    ypred_df.to_csv(csv_output_file_path)
-    save_to_s3(csv_output_file_path, filename)
+        save_to_s3(csv_output_file_path, filename)
+
+    print("That took: {} seconds".format(round(time.time() - checkpoint_1, 4)))
 
 
 def save_to_s3(filepath, key):
@@ -374,6 +383,16 @@ def save_to_s3(filepath, key):
             Bucket=AWS_BUCKET,
             Body=file,
         )
+
+def exists_on_s3(key):
+    try:
+        s3 = boto3.resource('s3')
+        s3.Object(AWS_BUCKET, key).load()
+        return True
+    except botocore.exceptions.ClientError as e:
+        if e.response['Error']['Code'] == '404':
+            return False
+        raise e
 
 
 if __name__ == "__main__":
