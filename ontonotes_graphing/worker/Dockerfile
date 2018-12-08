@@ -41,9 +41,10 @@ RUN $HOME/anaconda3/bin/pip install --upgrade \
 RUN $HOME/anaconda3/bin/pip install spacy==2.0.12
 RUN $HOME/anaconda3/bin/pip install \
     https://github.com/huggingface/neuralcoref-models/releases/download/en_coref_lg-3.0.0/en_coref_lg-3.0.0.tar.gz
-# RUN $HOME/anaconda3/bin/python -m spacy download en_core_web_lg
+RUN $HOME/anaconda3/bin/python -m spacy download en_core_web_lg
 RUN $HOME/anaconda3/bin/pip install "msgpack<0.6.0"
 
 RUN mkdir /worker/data
 COPY ./data/LP_NET_Graphs.20181205.pkl ./data/documents_dev.pkl /worker/data/
 COPY make_predictions.py /worker
+WORKDIR /worker
