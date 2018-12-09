@@ -1,15 +1,3 @@
-%
-% File acl2018.tex
-%
-%% Based on the style files for ACL-2017, with some changes, which were, in turn,
-%% Based on the style files for ACL-2015, with some improvements
-%%  taken from the NAACL-2016 style
-%% Based on the style files for ACL-2014, which were, in turn,
-%% based on ACL-2013, ACL-2012, ACL-2011, ACL-2010, ACL-IJCNLP-2009,
-%% EACL-2009, IJCNLP-2008...
-%% Based on the style files for EACL 2006 by 
-%%e.agirre@ehu.es or Sergi.Balari@uab.es
-%% and that of ACL 08 by Joakim Nivre and Noah Smith
 
 \documentclass[11pt,a4paper]{article}
 \usepackage[hyperref]{acl2018}
@@ -20,14 +8,8 @@
 
 \usepackage{url}
 
-\aclfinalcopy % Uncomment this line for the final submission
+\aclfinalcopy
 %\def\aclpaperid{***} %  Enter the acl Paper ID here
-
-%\setlength\titlebox{5cm}
-% You can expand the titlebox if you need extra space
-% to show all the authors. Please do not make the titlebox
-% smaller than 5cm (the original size); we will check this
-% in the camera-ready version and ask you to change it back.
 
 \newcommand\BibTeX{B{\sc ib}\TeX}
 
@@ -104,7 +86,6 @@ While we ultimately decided to build a new architecture, we were informed and in
 As our specific approach might be described as existing somewhere between Named Entity Recognition and Knowledge Representation, we considered approaches from both subfields.
 
 We found the work of \citet{SuciuInterleavingontologybasedreasoning2014} interesting in its Ontology-based approach for logically adding labels to characters in folktales by their role within the story. And how they relate to the other characters. For example, if a boy has a parent that is a King or a Queen, then that boy is a Prince:
-
 \begin{equation}
 \resizebox{\linewidth}{!} 
   {
@@ -252,49 +233,40 @@ We show how our performance improved with more nodes and higher average degree i
 
 \subsection{Where our model failed}
 
-As of the obvious inverse to where we succeeded, we note that our model failed most significantly where we lacked enough training examples.
+As the obvious inverse to where we succeeded, we note that our model failed most significantly where we lacked sufficient training examples. There was a significant difference in results with under 1,000 examples compared to those with 3,000 or more.
 
-Additionally, one thing we realized early on in this approach was that nearly every other entity type is personified to an extreme degree. While a person might 'run,' so too might an organization 'run a bake sale,' and a work of art might 'run up a high price.' Therefore the verb of running is not so indicative of a 'PERSON' type as we initially believed. In fact, it is difficult to conceive of a verb or adjective indicative of one class that could not be utilized by other entity types as well.
+Additionally we realized early on in our exploration of this approach that most entity types are frequently personified, which creates more overlap in the verbs and adjectives to which they are connected than we initially anticipated. While a person might 'run,' so too might an organization 'run a bake sale,' and a work of art might 'run up a high price at auction.' Therefore the verb of running is not so indicative of a 'PERSON' type as we initially imagined would be the case. In fact, it is difficult to conceive of a verb or adjective indicative of one class that could not be utilized by other entity types as well. Our model does have a difficult time discerning between a 'PERSON' and something that is 'PERSON'-ified.
 
-Another limitation of our model was the time it took to generate the NET graphs and evaluate the documents of our dev set. While we adjusted our architecture to parallel computations across a cluster in order to improve this time, it still took > 18 hours for all jobs to finish accross a Kubernetes cluster of 26 nodes with a combined 52 vCPUs and 195GB RAM. We expected this approach to not be the most speed-optimized technique given the graph-based approach rather than a vectorized approach taking advantage of matrix multiplication, but it made iteration and experimentation slower than anticipated.
+Another limitation of our model is that it takes a significant amount of computation to generate the NET graphs and evaluate candidate documents. While we adjusted our architecture to be able to process jobs in parallel across a cluster in order to improve training time, it still took > 18 hours for all jobs to finish accross a Kubernetes cluster of 26 nodes with a combined 52 vCPUs and 195GB RAM. We expected this approach to not be the most speed-optimized technique given our graph-based approach rather than a vectorized approach taking advantage of matrix multiplication, but it made iteration and experimentation slower than anticipated.
+
+Neural networks are notoriously data-hungry, but in comparison to our more 'brute force' approach, we see that trainable weights are in fact impressively efficient at generating high degrees of accuracy given the same amount of data. Given the stark differences in performance, we think future efforts to making Named Entity Disambiguation more auditable might be justifiably spent in making neural networks more interpretable rather than trying to circumvent those techniques with less flexible methods. Nevertheless, in the next section we present ideas on how our model might be improved.
 
 \subsection{Possible enhancements} \label{enhancements}
 
-Ideas for possible enhancements include:
+We believe that our model's performance could be significantly improved by implementation of one or more of the following methods:
 
 \begin{itemize}
 
-\item If it appears we are filtering out too much signal by being too selective, we are considering adding a hyperparameter that would not just take the immediate head and children of each entity in our NET graphs and inference candidates, but take one or two additional generations of head and child nodes, if they exist. This might allow us to take in more information while still filtering out noise that doesn't have a directly traceable dependency relation to the entity in question.
+\item We acknowledge that one limitation of our model is the amount of surrounding signal we are taking in as features. We think that further exploration of multiple generations of head and child words to incorporate, as well as the incorporation of the children of head nodes (which would allow us to take in direct objects when our entity is the subject of a sentence pointing directly to a root verb) would be valuable additional signal.
 
-\item If inference is too slow due to the large size of the NET graphs, we have considered compressing the information in those graphs by clustering the leaf nodes using a Partitioning Around Medoids algorithm to find the 50 or so most representative leaf nodes and having those absorb the weights of the other members in their cluster, which we could then discard. We think this would serve as a sort of regularization to allow the model to accept more synonyms rather than exact matches of candidate entity's head to leaf nodes, while still maintaining the clarity of having real word leaf nodes.
+\item We believe there might be benefits to reducing the number of nodes under each intermediary node (the nodes representing syntactic relationships), as long as we can do so without significantly reducing the signal that represents the variety of ways that a leaf node can follow from those nodes (especially seeing how important the average degree relates to performance). We hypothesize that by clustering leaf nodes on the Named Entity Template graphs, and having each cluster absorb some form of weight based on the number of nodes that falls into that cluster, we could dramatically speed up inference time, as well as provide a form of regularization. As we saw in our earlier example, the similarity of "city" and "town" is only 0.77 in comparison to an exact match of 1.0 with city: a difference of nearly 30\%. By finding a large number of cluster centers in the embedding space that no word would match \textit{exactly} while more words would be \textit{near}, we think we might be able to more gracefully generalize to new words without hitting such hot spots due to exact matches vs. near misses. If maintaining interpretability of the NET graphs as their own artifacts became too confusing with clusters, we could either find the word nearest the cluster center to represent it, or else lock our cluster centers to the most central of the existing leaf nodes via a Partitioning Around Medoids (k-medoids) algorithm.
 
-\item Add the children of our head to capture direct objects of the verb.
+\item We posit that running a TF-IDF weighting of the leaf nodes would improve results by bringing out the most salient examples in each graph. Alternatively or additionally, we might prune stop words from the graphs as not containing distinguishing information.
 
-\item Alternatively, if the model is too sensitive to whether a candidate entity's head matches exactly to a leaf node in our NET graphs, we could do clustering of the leaf node words via k-means, such that our clusters' centers would \textit{not} be actual words, but would exist somewhere in the embedding space near the words, and thus no word would likely be a 100\% match. To maintain interpretability, we could maintain a list of the closest leaf node to each cluster center.
+\item Another potential method we predict would improve the accuracy of our model is to replace certain types of strings with a common replacement. For example, we could replace all sequences of digits with a '1' in each digit location, so dates of all formats could result in '11/11/1111', prices could register as \$1,111.11, and percentages could appear as '11\%.' This replacement would be made in the NET graphs as well as in the candidate graphs. By reducing the large variance in numerical representations, our model would be more able to reliably interpret those types of data without the values needing to match exactly.
 
-\item We considered giving each syntactic function node a trainable weight, and then training those weights via a logistic regression type neural network to emphasize or deemphasize the importance of certain syntactic functions for classifying certain Named Entity Types, but we don't expect the candidate graphs to have enough different syntactic functions represented to make this worthwhile.
-
-\item We posit that running a TF-IDF weighting of the leaf nodes would improve results by bringing out the most salient examples in each graph.
-
-\item Another potential method we predict would improve the accuracy of our model is to replace certain types of strings with a common replacement. For example, we would replace digits with '11', dates of all formats with '11/11/1111', and percentages with '99\%.' This replacement would be made in the NET graphs as well as in the candidate graphs. By reducing the large variance in numerical representations, we would be able to provide more accurate probabilities surrounding those tokens.
-
-\item Lastly, we are considering pruning stop words from the NET graphs, again in hopes of removing noise from the model.
+\item A feature used by other NER systems that we believe might be valuable in ours is to incorporate the shape of input words, by which we mean a letter count that considers capitalization and digits vs text characters. For example 'Andrew' and 'Daniel' would both be represented as 'Xxxxxx', and '\$1,000' could be represented as '\$1,111'. By adding an additional 'shape' intermediary node as a parallel to the syntactic relationship intermediary nodes and perhaps giving it an additional (even trainable) weight, we expect we could gain additional performance, particularly on many of the numerical-based entity types of which we saw fewer examples.
 
 \end{itemize}
 
 \section{Conclusion}
 
-Given more time to improve the inference performance of the model and to improve the features and weights included in the graph model, we believe this system could develop into a powerful classifier for longer literary works such as novels.
+Given more time to improve the inference performance of the model and to improve the features and potential weights included in the graph model, we believe that it could develop into a viable alternative for applications of NER where interpretability is critical.
 
-In addition to being useful for interpretable Named Entity Disambiguation, the Named Entity Type graphs are interesting artifacts themselves, and we see additional possible uses for these techniques. One example use case might be in creating graphs that model the portrayal of different characters in a novel, for example, perhaps with a different graph for each chapter to help publishers and authors plot the development of characters over a longer work.
+Additionally, the graphs we generate are interesting artifacts in themselves, and we therefore see possible uses for these techniques in evaluating in-progress literary works. One example use case might be in creating graphs that model the portrayal of each character in a novel, for example, to help publishers and authors clarify the distinct language choices distinguishing one character from another. With additional refinement and appropriately large labeled datasets, we could generate more fine-tuned distinctions as well, classifying a protagonist in a novel as a traditional hero or an anti-hero. We could identify occupations or literary tropes represented by supporting characters. Or we could graph primary characters on a per-chapter basis to assist in plotting the development of characters over a longer work.
 
-With additional refinement and the appropriate labeled dataset, we could classify a protagonist in a novel as a traditional hero or an anti-hero. We could identify occupations or literary tropes represented by supporting characters. And interesting tools for authors or publishers could be developed by tracking changes in a character's behavior from heroic to antiheroic from chapter to chapter.\cite{LampleNeuralArchitecturesNamed2016}
+Overall, we maintain a belief in the potential of graph-based 'mental constructs' as having additional applications in the progression of machine learning due to their persistence, general transferability from model to model, and their ability to continue to absorb cumulative knowledge. Nevertheless, we acknowledge the extreme performance advantages demonstrated by mature neural network approaches, and we believe that a more immediate (and potentially longterm) return on resources might come from developing tools to make those models more interpretable rather than attempting to circumvent the techniques that have led to their current prominence.
 
-Furthermore, we see the potential of graph-based 'mental constructs' as having additional applications in the progression of machine learning. We believe transition-based parsing approaches could directly build on these graphs, and logical operations could be conducted on them to build out unstated but implied nodes that enhance our understanding of entities beyond what is explicitly stated. \cite{NivreIncrementalityDeterministicDependency2004}
-
-% include your own bib file like this:
-%\bibliographystyle{acl}
-%\bibliography{acl2018}
 \bibliography{acl2018}
 \bibliographystyle{acl_natbib}
 
