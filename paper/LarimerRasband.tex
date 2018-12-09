@@ -47,9 +47,9 @@ Like many neural networks, the decisions made by most Named Entity Recognition s
 \end{abstract}
 
 \section{Introduction}
-Named Entity Recognition systems have achieved impressive performance with state-of-the-art models resulting in ~90\% classification accuracy on popular benchmarks like the OntoNotes 5.0 corpus and the .
+Named Entity Recognition systems have achieved impressive performance with state-of-the-art models resulting in $\sim$90\% classification accuracy on popular benchmarks like the OntoNotes 5.0 corpus and the CoNLL-2003 shared task data.
 
-In order to achieve these results, however, the leading neural systems rely on matrices of numerical weights, often distributed across neural layers. This makes their rationale for arriving at a given classification uninterpretable by humans. While word embeddings, another mathematical construct of Natural Language Processing, can at least be explored in relation to one another by projecting them into 2D or 3D space, current NER systems don't provide us an easy way to compare the internal representations of different entity types.  In industries and applications that require decisions to be auditable, for example in the processing of loan applications that fall under the jurisdiction of the Fair Lending Act, the inability to peer into the workings of a model and clearly articulate why it is outputting one classification or another may not be acceptable.
+In order to achieve these results, however, the leading neural systems rely on matrices of numerical weights, often distributed across neural layers. This makes their rationale for arriving at a given classification uninterpretable by humans. While word embeddings, another mathematical construct of Natural Language Processing, can at least be explored in relation to one another by projecting them into 2D or 3D space, current NER systems don't provide us an easy way to compare the internal representations of different entity types. In industries and applications that require decisions to be auditable, for example in the processing of loan applications that fall under the jurisdiction of the Fair Lending Act, the inability to peer into the workings of a model and clearly articulate why it is outputting one classification or another may not be acceptable.
 
 We propose a novel graph-based architecture that allows for transparency in how a candidate entity is classified. While our prototype system achieves only a very modest accuracy of 25.62\% on the OntoNotes 5.0 corpus, we are confident that it can be further enhanced through the incorporation of additional input features and refinements. The basic validity of the approach is demonstrated by our model's statistically significant performance (\textit{p-value: 2.2e-16}) over a baseline of always choosing the most common Named Entity Type ('ORG' in the OntoNotes 5.0 corpus) which would result in an accuracy of 20.15\%.
 
@@ -72,7 +72,7 @@ Our approach begins by training what we refer to as a Named Entity Template (NET
 
 We achieve our results by first constructing a graph over a labeled training set that serves as a 'mental model' or 'Platonic ideal' of what a given Named Entity Type is. Concretely, Figure \ref{fig:person_graph} shows an example of a dramatically pruned version of our representation of the 'PERSON' entity type. The graphs are built to be grammatically aware, constructing a subgraph for each syntactic role the entity plays within the corpus. This allows for us to distinguish between what a given entity does in comparison to what is done to it.
 
-In Figure \ref{fig:person_graph}, we see that when a 'PERSON' is the subject of a verb with an active tense, they might concede, dare, or sign something. When they are a direct object, someone might be urging them, bringing them somewhere, or handing them something. If used as a possession modifier, a person might have a widow, a son, or she might have words.
+In Figure \ref{fig:person_graph}, we see that when a 'PERSON' is the subject of a verb with an active tense, they might "concede", "dare", or "sign" something. When they are a direct object, someone might be "urging" them, "bringing" them somewhere, or "handing" them something. If used as a possession modifier, a person might have a "widow", a "son", or she might have "words".
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{figures/G_PERSON.png}
@@ -80,11 +80,11 @@ In Figure \ref{fig:person_graph}, we see that when a 'PERSON' is the subject of 
   \label{fig:person_graph}
 \end{figure}
 
-The example in Figure \ref{fig:person_graph} shows a NET graph constructed from twelve occurences of entities labeled as 'PERSON' in the OntoNotes corpus. We use a depedency parser to parse each sentence in which a labeled entity occurs, and we create a leaf node from the word identified by the dependency parse as the head of our labeled entity. The dependency relationship between them, which is typically labeled on the arc in a visaulized dependency parse, becomes another node in between the root 'PERSON' node and its head in that occurence.
+The example in Figure \ref{fig:person_graph} shows a NET graph constructed from twelve occurrences of entities labeled as 'PERSON' in the OntoNotes corpus. We use a dependency parser to parse each sentence in which a labeled entity occurs, and we create a leaf node from the word identified by the dependency parse as the head of our labeled entity. The dependency relationship between them, which is typically labeled on the arc in a visualized dependency parse, becomes another node in between the root 'PERSON' node and its head in that occurrence.
 
-When conducting inference, we currently rely on an existing Named Entity Recognition system to supply candidates, and our system takes over to classify the candidate.
+When conducting inference, we currently rely on an existing Named Entity Recognition system to supply candidates, and our system takes over to classify the named entity type of the candidate.
 
-For each candidate entity, we construct a graph in a similar manner to how we construct the Named Entity Type graph. The primary difference is that while we have many labeled examples of a 'PERSON' in the OntoNotes corpus, when encountering a candidate entity, we only have its one concrete occurence. To supplement its graph, we use a coreference system to find other mentions in the text that represent the same entity, and add the relationships from each of those mentions to our graph.
+For each candidate entity, we construct a graph in a similar manner to how we construct the Named Entity Template graph. The primary difference is that while we have many labeled examples of a 'PERSON' in the OntoNotes corpus, when encountering a candidate entity, we only have its one concrete occurrence. To supplement its graph, we use a coreference system to find other mentions in the text that represent the same entity, and add the relationships from each of those mentions to our graph.
 
 We note here that while Figure \ref{fig:person_graph} shows only one generation of relationships in the direction of the dependency head, from a labeled entity to its direct head node according to a dependency parse, our NET graphs and candidate graphs actually traverse the dependency parse two generations up the tree (to the entity's head and that head's head) as well as two generations down the tree (to the entity's children, such as any adjectives modifying it, as well as the children of those children). This allows us to take in much more signal from the text that is still directly related to the entity we are considering.
 
@@ -103,7 +103,7 @@ While we ultimately decided to build a new architecture, we were informed and in
 \subsection{Ontology-based NER}
 As our specific approach might be described as existing somewhere between Named Entity Recognition and Knowledge Representation, we considered approaches from both subfields.
 
-We found the work of \citet{SuciuInterleavingontologybasedreasoning2014} interesting in its Ontology-based approach for logically adding labels to characters in folktoles by their role within the story. And how they relate to the other characters. For example, if a boy has a parent that is a King or a Queen, then that boy is a Prince:
+We found the work of \citet{SuciuInterleavingontologybasedreasoning2014} interesting in its Ontology-based approach for logically adding labels to characters in folktales by their role within the story. And how they relate to the other characters. For example, if a boy has a parent that is a King or a Queen, then that boy is a Prince:
 
 \begin{equation}
 \resizebox{\linewidth}{!} 
@@ -118,11 +118,11 @@ We found that an intriguing concept, and wondered if we could build a system tha
 
 Within the subfield of NER, \citet{LampleNeuralArchitecturesNamed2016} demonstrated interesting results in transition-based Named Entity Recognition. Using a similar model to a transition-based dependency parser, which processes text from left to right by considering one word at a time from a buffer of all the words in a sentence.
 
-For each word it encounters, a traditional arc-standard transition-based system \cite{NivreIncrementalityDeterministicDependency2004} classifies the appropriate action to take from a small vocabulary of possible actions. One action in a transition-based system is a 'SHIFT' to move a word from the buffer onto a stack, which serves as both a storage area for words on which we are not yet ready to act, as well as a staging area for multi-word phrases. Another action in a typical dependency parsing transition-based system is 'REDUCE', which in arc-eager systems can come in a 'REDUCE-LEFT' and 'REDUCE-RIGHT' variety, and removes words from the buffer or stack depending on which directional varient is used, applying a dependency relation to the arc at the same time.
+For each word it encounters, a traditional arc-standard transition-based system \cite{NivreIncrementalityDeterministicDependency2004} classifies the appropriate action to take from a small vocabulary of possible actions. One action in a transition-based system is a 'SHIFT' to move a word from the buffer onto a stack, which serves as both a storage area for words on which we are not yet ready to act, as well as a staging area for multi-word phrases. Another action in a typical dependency parsing transition-based system is 'REDUCE', which in arc-eager systems can come in a 'REDUCE-LEFT' and 'REDUCE-RIGHT' variety, and removes words from the buffer or stack depending on which directional variant is used, applying a dependency relation to the arc at the same time.
 
 In this application, \citet{LampleNeuralArchitecturesNamed2016} used a similar system enhanced by Stack-LSTMs\cite{DyerTransitionBasedDependencyParsing2015} instead of simple stacks. An LSTM is a type of recurrent neural network that passes two outputs into another LSTM cell that shares its weights. One of these outputs is more directly responsive to the immediate input at each word as it moves over a text, while the other output called the 'cell state' is designed to carry signal until the chain of LSTM cells decides to alter it, thus enabling a longer 'memory' of the passage of text that has been fed through the network. The Stack-LSTMs used in this case are a hybrid of a stack data structure and a recurrent LSTM neural network designed such that each stack can maintain an embedded awareness of its full contents. And here, instead of applying dependency parse tags, their weights are trained to apply NER type labels upon a REDUCE action.
 
-Transition-based approaches were intially designed to generate trees, and while the weights for applying labels are opaque to human interpretability, we found this method intriguing and inspiring towards our eventual approach.
+Transition-based approaches were initially designed to generate trees, and while the weights for applying labels are opaque to human interpretability, we found this method intriguing and inspiring towards our eventual approach.
 
 \subsection{LSTMs and CRFs}
 
@@ -144,29 +144,29 @@ For each occurrence of a labeled named entity in our training set, we do the fol
 
 2. We load the graph for the Named Entity Type represented by that occurrence ('PERSON', 'ORGANIZATION', 'WORK\_OF\_ART', etc.). Using the example of 'Nobel Peace Prize', we would load the graph for its entity type: 'WORK\_OF\_ART'.
 
-3. We look at the dependency parse of the sentence in which the entity occurence appears, and add the entity's head token to a list, and its children token to a list. The steps below repeat for each of the words added to these lists.
+3. We look at the dependency parse of the sentence in which the entity occurrence appears, and add the entity's head token to a list, and its children token to a list. The steps below repeat for each of the words added to these lists.
 
-3. We look at the relationship identified by the dependency parse between the root node of the graph and the head or child we are considering. If the Named Entity Type graph already has a node corresponding to that relationship, we load it as our "intermediary node" and add a one to its occurence count. If it does not yet exist, we create it and assign it a count score of one. In the 'Nobel Peace Prize' example, we see that 'Prize' is a 'direct object' with 'awarded' as its head, so we find the 'direct object' child node of the 'WORK\_OF\_ART' root node. If there isn't already a 'direct object' node, we create it, and assign it a score count of one. If it is already there, we increase a score count by one for the ability to explore different similarity functions later on.
+4. We look at the relationship identified by the dependency parse between the root node of the graph and the head or child we are considering. If the Named Entity Type graph already has a node corresponding to that relationship, we load it as our "intermediary node" and add a one to its occurrence count. If it does not yet exist, we create it and assign it a count score of one. In the 'Nobel Peace Prize' example, we see that 'Prize' is a 'direct object' with 'awarded' as its head, so we find the 'direct object' child node of the 'WORK\_OF\_ART' root node. If there isn't already a 'direct object' node, we create it, and assign it a score count of one. If it is already there, we increase a score count by one for the ability to explore different similarity functions later on.
 
 We chose to implement the dependency relationships as intermediary nodes rather than labels on our edges for two reasons: First, it saves us time during inference by allowing us to use graph library methods to directly access the intermediary node that represents how a given candidate entity is being used in a sentence. Additionally, it generates cleaner, more interpretable graphs, with natural clustering of the head words resulting from a particular syntactic usage of the entity type.
 
-4. Under the intermediary node, we now add a leaf node for our named entity's head in the dependency parse. In the 'Nobel Peace Prize' example, the head of 'Prize' when it was used as a direct object is 'awarded,' so we create a node for 'awarded' as a child node of 'direct object' and give it a score of one, unless it already exists, in which case we increase its score by one.
+5. Under the intermediary node, we now add a leaf node for our named entity's head in the dependency parse. In the 'Nobel Peace Prize' example, the head of 'Prize' when it was used as a direct object is 'awarded,' so we create a node for 'awarded' as a child node of 'direct object' and give it a score of one, unless it already exists, in which case we increase its score by one.
 
-5. In the special case of arriving at a preposition, we take an extra leap up the depedency tree to find that preposition's head, as we found more signal present in the heads of the prepositions rather than in the prepositions like "to" or "of" themselves.
+6. In the special case of arriving at a preposition, we take an extra leap up the dependency tree to find that preposition's head, as we found more signal present in the heads of the prepositions rather than in the prepositions like "to" or "of" themselves.
 
-6. If we were processing a head node, we add its head to our head list, and if we were processing a child node, we add its children to our child list, and we repeat the process for one more generation, with this node we have arrived at acting as the new root node of our next generation.
+7. If we were processing a head node, we add its head to our head list, and if we were processing a child node, we add its children to our child list, and we repeat the process for one more generation, with this node we have arrived at acting as the new root node of our next generation.
 
 \subsection{Conducting Inference on a New Named Entity Candidate}
 
-We consider each Named Entity as identified by an existing NER system\footnote{For candidate identification we used spaCy's built-in NER module.} For each named entity candidate, we do the following:
+We consider each Named Entity as identified by an existing NER system\footnote{For candidate identification we used spaCy's \cite{spacy2} built-in NER module.} For each named entity candidate, we do the following:
 
 1. We construct a candidate graph in a similar manner to that described above for generating the Named Entity Type graphs. We use a coreference system to include multiple references to the entity in order to generate as robust a graph as possible to compare against our NET graphs.
 
 2. We compare our candidate graph to each of the eighteen Named Entity Type graphs. We only consider the subgraphs branching from intermediary nodes (the syntactic role nodes from the dependency relations) that are contained in our candidate graph, which saves us a lot of processing time on each of the extensive NET graphs.
 
-3. Traveling down the branches of the matching intermediary nodes, we calculate a score for each successor node (the words that represent the head or child of our original node). If that successor node is a leaf node, we calculate the score directly as described below. If it has further intermediary node successors (which would be further dependency relations taht match between the candidate graph and the NET graph against which we are comparing it), we travel down those branches to their leaf nodes, and eventually assign this node a score of the sum of its successors' scores.
+3. Traveling down the branches of the matching intermediary nodes, we calculate a score for each successor node (the words that represent the head or child of our original node). If that successor node is a leaf node, we calculate the score directly as described below. If it has further intermediary node successors (which would be further dependency relations that match between the candidate graph and the NET graph against which we are comparing it), we travel down those branches to their leaf nodes, and eventually assign this node a score of the sum of its successors' scores.
 
-4. For each of our candidate graph's leaf nodes, we compare that word's similarity to the similarity of all the leaf nodes under the NET's corresponding intermediary node by a comparison of their word embeddings.\footnote{This score is using spaCy's Token.similarity() method. This seems to be a cosine similarity of the words' embeddings, but it is not explicitly stated as such in their documentation.} We take the highest-scoring similarity measurement as our score for this leaf node. Concretely, if we were considering a candidate entity used as a possession modifier, and its head in that relationship (the thing it possessed) was "city," then in comparing that with the children of a Named Entity Type graph's 'possession modifier' intermediary node branching from its root, we would find that its highest-scoring successor "town" gets a rating score of 0.77 vs another successor "missiles," which gets a score of 0.11. So in this case we would add a score of 0.77 to this branch of this Named Entity Graph's similarity score, indicating that both of these entity's may have something city-like or town-like. We tried various alternative similarity scores, which we discuss below in Section \ref{sim_scores}, but found this most basic accumulation of similarity evidence to work the best in our practice so far. 
+4. For each of our candidate graph's leaf nodes, we compare that word's similarity to the similarity of all the leaf nodes under the NET's corresponding intermediary node by a comparison of their word embeddings.\footnote{This score is using spaCy's Token.similarity() method. This seems to be a cosine similarity of the words' embeddings, but it is not explicitly stated as such in their documentation.} We take the highest-scoring similarity measurement as our score for this leaf node. Concretely, if we were considering a candidate entity used as a possession modifier, and its head in that relationship (the thing it possessed) was "city," then in comparing that with the children of a Named Entity Type graph's 'possession modifier' intermediary node branching from its root, we would find that its highest-scoring successor "town" gets a rating score of 0.77 vs. another successor "missiles," which gets a score of 0.11. So in this case we would add a score of 0.77 to this branch of this Named Entity Graph's similarity score, indicating that both of these entity's may have something city-like or town-like. We tried various alternative similarity scores, which we discuss below in Section \ref{sim_scores}, but found this most basic accumulation of similarity evidence to work the best in our practice so far. 
 
 4. We sum the scores of each "syntactic function node"'s highest-scoring child nodes to arrive at the similarity score for that Named Entity Type Graph.
 
@@ -177,26 +177,26 @@ We consider each Named Entity as identified by an existing NER system\footnote{F
 We tried a number of approaches of formulas for best evaluating the similarity of each syntactic branch of the graph. To show the equations, we will use the following conventions:
 
 \begin{itemize}
-\item L represents the NET graph's leaf node that corresponds syntactically with our candidate graph's leaf node which we are scoring, and has the highest similarity score of its sibling nodes to our candidate node.
-\item $L_{count}$ represents the count of occurences of that node
-\item $Int_{count}$ represents the count of the intermediary node that is a predecessor to this node on the graph (so in the first generation of our graphs, Int represents the syntactic relationship of L to the entity, and $Int_{count}$ represents how many times this entity type filled that syntactic role in our training corpus)
+\item $L$ represents the NET graph's leaf node that corresponds syntactically with our candidate graph's leaf node which we are scoring, and has the highest similarity score of its sibling nodes to our candidate node.
+\item $L_{count}$ represents the count of occurrences of that node
+\item $Int_{count}$ represents the count of the intermediary node that is a predecessor to this node on the graph (so in the first generation of our graphs, $Int$ represents the syntactic relationship of $L$ to the entity, and $Int_{count}$ represents how many times this entity type filled that syntactic role in our training corpus)
 \end{itemize}
 
-Initially, we tried to take into account how frequently L appeared in that syntactic relationship to the head node. The intuitive motivation was that while a person might 'release' a prisoner, organizations probably more commonly 'release' press releases, and thus the frequency within each syntactic branch of each NET would be indicative of how commonly used that behavior is for that type of entity.
+Initially, we tried to take into account how frequently $L$ appeared in that syntactic relationship to the head node. The intuitive motivation was that while a person might 'release' a prisoner, organizations probably more commonly 'release' press releases, and thus the frequency within each syntactic branch of each NET would be indicative of how commonly used that behavior is for that type of entity.
 
 $$ log(L_{score}) + log(\frac{L_{count}}{Int_{count}}) $$
 
-This resulted in very poor performance (equivalent to random guessing), however, particularly on entity types such as 'PERSON' and 'ORG' which appear frequently, and therefor the matches were unduly penalized by the size of $Int_{count}$.
+This resulted in very poor performance (equivalent to random guessing), however, particularly on entity types such as 'PERSON' and 'ORG' which appear frequently, and therefore the matches were unduly penalized by the size of $Int_{count}$.
 
-In order to relax the penalty of more-commonly occuring intermediary nodes, we tried this with the square root of both the count and the intermediary node count:
+In order to relax the penalty of more-commonly occurring intermediary nodes, we tried this with the square root of both the count and the intermediary node count:
 
 $$ log(L_{score}) + log(\frac{L_{\sqrt(count)}}{Int_{\sqrt(count)}}) $$
 
-as well as logarithmic approach there without the outer log probabilities, as our numbers weren't too close to zero as to make those essential:
+We also tried a logarithmic approach there without the outer log probabilities, as our numbers weren't too close to zero as to make those essential:
 
 $$ L_{score} * \frac{L_{log(count)}}{Int_{log(count)}} $$
 
-These methods improved performance on a small subset of candidates by not penalizing the more frequently occuring types as severely, but they were still penalized, and thus this method still resulted in worse performance than simply using the similarity counts on their own.
+These methods improved performance on a small subset of candidates by not penalizing the more frequently occurring types as severely, but they were still penalized, and thus this method still resulted in worse performance than simply using the similarity counts on their own.
 
 We note that by using similarity scores between word embeddings, we are potentially violating our principle of avoiding difficult-to-explain mathematical constructs. But we believe that the concept of a comparison measurement between the usage of words is explained easily enough to still be considered 'auditable', even if a lay person might not be able to generate those measurements arrived at by a cosine similarity.
 
@@ -209,7 +209,8 @@ Table \ref{outcomes} shows our results. Naturally, we were hoping for better per
 \begin{table*}[ht]
 \begin{tabular}{lllllll}
 \toprule
-Entity Type   & Precision & Recall  & F1-Score & Support  & Avg. Degree & No. Nodes \\ \midrule
+Entity Type   & Precision & Recall  & F1-Score & Support  & Avg. Degree & No. Nodes \\ 
+\midrule
 CARDINAL      & 23.45\%   & 24.47\% & 23.95\%  & 1590     & 2.59        & 5109       \\
 DATE          & 43.19\%   & 27.18\% & 33.36\%  & 2870     & 3.10        & 6078    \\
 EVENT         & 1.72\%    & 8.62\%  & 2.87\%   & 116      & 1.74        & 1350   \\
@@ -227,7 +228,8 @@ PERSON        & 42.58\%   & 36.80\% & 39.48\%  & 2891     & 2.60        & 9640  
 PRODUCT       & 3.40\%    & 9.85\%  & 5.06\%   & 132      & 1.84        & 1348 \\
 QUANTITY      & 3.82\%    & 9.29\%  & 5.41\%   & 183      & 1.86        & 1471 \\
 TIME          & 5.30\%    & 12.44\% & 7.43\%   & 201      & 2.03        & 1478 \\
-WORK\_OF\_ART & 1.67\%    & 15.87\% & 3.02\%   & 63       & 1.77        & 1743 \\ \midrule
+WORK\_OF\_ART & 1.67\%    & 15.87\% & 3.02\%   & 63       & 1.77        & 1743 \\ 
+\midrule
 Overall       & 34.04\%   & 25.62\% & 28.05\%  & 19192    & 2.18 (avg.)  & 3656 (avg.)
 \end{tabular}
 \caption{Our results show that our overall performance was best on 'PERSON'-type entities. We also display some metadata of each entity's NET graph.}
@@ -236,9 +238,9 @@ Overall       & 34.04\%   & 25.62\% & 28.05\%  & 19192    & 2.18 (avg.)  & 3656 
 
 \subsection{Where our model succeeded}
 
-We see that our model performed best on identifying 'PERSON' type entities according to F1 score, and that 'PERSON' was among the top performers in terms of both precision and recall. Other top performers include 'ORG', 'GPE', 'DATE', and 'MONEY'.
+We see that our model performed best on identifying 'PERSON' type entities according to the F1 score, and that 'PERSON' was among the top performers in terms of both precision and recall. Other top performers include 'ORG', 'GPE', 'DATE', and 'MONEY'.
 
-In evaluating the metadata of our NET graphs, we see that all five of those NETs have among our highest average degree scores of over 2.2 in call cases (with all but 'MONEY' having an average idegree of over 2.7), . By contrast, our lowest performing NET types such as 'WORK\_OF\_ART', 'EVENT', and 'LAW' all have average degree scores of ~1.7 or below. We also see that our lowest performers each encountered fewer than 2,000 examples in our training set, and our top performers each encountered greater than 6,000 except for 'MONEY' which came in at a little over 3,000 nodes, but may have just been easier to classify.
+In evaluating the metadata of our NET graphs, we see that all five of those NETs have among our highest average degree scores of over 2.2 in call cases (with all but 'MONEY' having an average degree of over 2.7), . By contrast, our lowest performing NET types such as 'WORK\_OF\_ART', 'EVENT', and 'LAW' all have average degree scores of $\sim$1.7 or below. We also see that our lowest performers each encountered fewer than 2,000 examples in our training set, and our top performers each encountered greater than 6,000 except for 'MONEY' which came in at a little over 3,000 nodes, but may have just been easier to classify.
 
 We show how our performance improved with more nodes and higher average degree in Figure \ref{fig:performance}. This does suggest that our model was functional and became more accurate as it learned on more data, although improvements appear to begin tapering off in the addition of more nodes at around 5,000 nodes and in the increased average degree at around 2.4. We believe the additional features we discuss in Section \ref{enhancements} could allow for continued performance improvements as the size of our training data continued to scale.
 
@@ -264,7 +266,7 @@ Ideas for possible enhancements include:
 
 \item If it appears we are filtering out too much signal by being too selective, we are considering adding a hyperparameter that would not just take the immediate head and children of each entity in our NET graphs and inference candidates, but take one or two additional generations of head and child nodes, if they exist. This might allow us to take in more information while still filtering out noise that doesn't have a directly traceable dependency relation to the entity in question.
 
-\item If inference is too slow due to the large size of the NET graphs, we have considered compressing the information in those graphs by clustering the leaf nodes using a Partitioning Around Medoids algorithm to find the 50 or so most representative leaf nodes and having those absorb the weights of the other members in their cluster, which we could then discard. We think this serve as a sort of regularization to allow the model to accept more synonyms rather than exact matches of candidates entity's heads to leaf nodes, while still maintaining the clarity of having real word leaf nodes.
+\item If inference is too slow due to the large size of the NET graphs, we have considered compressing the information in those graphs by clustering the leaf nodes using a Partitioning Around Medoids algorithm to find the 50 or so most representative leaf nodes and having those absorb the weights of the other members in their cluster, which we could then discard. We think this would serve as a sort of regularization to allow the model to accept more synonyms rather than exact matches of candidate entity's head to leaf nodes, while still maintaining the clarity of having real word leaf nodes.
 
 \item Add the children of our head to capture direct objects of the verb.
 
@@ -272,19 +274,17 @@ Ideas for possible enhancements include:
 
 \item We considered giving each syntactic function node a trainable weight, and then training those weights via a logistic regression type neural network to emphasize or deemphasize the importance of certain syntactic functions for classifying certain Named Entity Types, but we don't expect the candidate graphs to have enough different syntactic functions represented to make this worthwhile.
 
-\item TF-IDF on the leaf nodes.
+\item We posit that running a TF-IDF weighting of the leaf nodes would improve results by bringing out the most salient examples in each graph.
 
-\item replace digits with DDDDD in the NET graphs as well as candidates
+\item Another potential method we predict would improve the accuracy of our model is to replace certain types of strings with a common replacement. For example, we would replace digits with '11', dates of all formats with '11/11/1111', and percentages with '99\%.' This replacement would be made in the NET graphs as well as in the candidate graphs. By reducing the large variance in numerical representations, we would be able to provide more accurate probabilities surrounding those tokens.
 
-\item We are considering pruning stop words from the NET graphs, or using TF-IDF to dampen the weights of common words that might be found on several NET graphs (defining the graphs as the documents for purposes of the IDF).
+\item Lastly, we are considering pruning stop words from the NET graphs, again in hopes of removing noise from the model.
 
 \end{itemize}
 
 \section{Conclusion}
 
-We anticipate finishing our code for the above model in the next day or two, and then evaluating whether we have time to add possible enhancements.
-
-We envision this system developing into a powerful classifier for longer literary works such as novels, particularly as we develop more fine grained named entity types.
+Given more time to improve the inference performance of the model and to improve the features and weights included in the graph model, we believe this system could develop into a powerful classifier for longer literary works such as novels.
 
 In addition to being useful for interpretable Named Entity Disambiguation, the Named Entity Type graphs are interesting artifacts themselves, and we see additional possible uses for these techniques. One example use case might be in creating graphs that model the portrayal of different characters in a novel, for example, perhaps with a different graph for each chapter to help publishers and authors plot the development of characters over a longer work.
 
